@@ -1,0 +1,36 @@
+.p-sp-nav {
+  display: none;
+  @include mq(sp) {
+    display: block;
+    background-color: #000;
+    // 横から出てくる場合
+    transform: translateX(100%);
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+}
+
+.p-sp-nav__items {
+  padding: rem(143) 0 rem(208);
+  //   marginでheaderに刺さらないようにする
+  margin-top: rem(50);
+  height: 100vh;
+  overflow: scroll;
+}
+.p-sp-nav__item a {
+  display: block;
+  width: 100%;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  text-align: center;
+  color: #fff;
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+}
+
+.is-drawerActive {
+  .p-sp-nav {
+    transform: translateX(0px);
+    transition: 0.3s;
+  }
+}

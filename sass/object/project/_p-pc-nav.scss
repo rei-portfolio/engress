@@ -1,0 +1,29 @@
+.p-pc-nav {
+  height: inherit;
+  display: block;
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.p-pc-nav__items {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.p-pc-nav__item {
+  height: inherit;
+}
+
+.p-pc-nav__item a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 rem(19);
+  font-weight: $font-weight-bold;
+}
+
+.p-pc-nav__item a:first-child {
+  margin-left: rem(9);
+}

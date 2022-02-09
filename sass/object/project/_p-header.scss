@@ -1,0 +1,72 @@
+.p-header {
+  @include mq(sp) {
+    background-color: $background;
+  }
+}
+
+.p-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: rem(15);
+  padding-right: rem(10);
+  height: inherit;
+  @include mq(sp) {
+    padding: 0 rem(22);
+  }
+}
+
+.p-header__block {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.p-header__logo {
+  width: rem(136);
+  height: rem(27);
+  @include mq(sp) {
+    width: rem(74);
+    height: rem(25);
+  }
+}
+
+.p-header__hamburger {
+  @include mq(sp) {
+    position: absolute;
+    top: rem(17);
+    right: rem(17);
+    z-index: 5;
+    width: rem(36);
+    height: rem(16);
+  }
+}
+
+.p-header__sp-nav {
+  @include mq(sp) {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+  }
+}
+
+.p-header__info {
+  margin-top: rem(15);
+}
+
+.p-header__hour {
+  font-size: rem(12);
+  text-align: right;
+}
+
+.p-header__btn {
+  margin-left: rem(24);
+}
+
+.p-header__btn:last-child {
+  margin-left: rem(10);
+}

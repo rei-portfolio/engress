@@ -1,0 +1,16 @@
+.c-tell {
+  display: flex;
+  align-items: center;
+}
+
+.c-tell__img {
+  width: rem(10);
+  height: rem(14.71);
+  margin-top: rem(5);
+}
+
+.c-tell__number {
+  font-weight: $font-weight-bold;
+  margin-top: rem(5);
+  margin-left: rem(5);
+}

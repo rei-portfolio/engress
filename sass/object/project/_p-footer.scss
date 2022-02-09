@@ -1,0 +1,22 @@
+.p-footer {
+  margin-top: 100px;
+  color: $text-color;
+}
+
+.p-footer__bgc {
+  background-color: $blue-background;
+}
+
+.p-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  color: $sub-text-color;
+  
+}
+
+.p-footer__items {
+  display: flex;
+  align-items: center;
+}
+.p-footer__block {
+}
