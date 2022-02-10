@@ -11,12 +11,62 @@
   display: flex;
   justify-content: space-between;
   color: $sub-text-color;
-  
+  padding: rem(35) 0 rem(66);
 }
 
 .p-footer__items {
   display: flex;
   align-items: center;
+  padding-top: rem(11);
 }
-.p-footer__block {
+
+.p-footer__item {
+  position: relative;
+}
+.p-footer__item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $background;
+  height: 100%;
+  width: 1px;
+}
+
+.p-footer__item:last-child:before {
+  content: none;
+}
+
+.p-footer__item a {
+  font-weight: $font-weight-bold;
+  padding: 0 rem(26);
+}
+
+.p-footer__item:first-child a {
+  padding-left: 0;
+}
+
+.p-footer__logo a {
+  display: block;
+  background-color: $background;
+  padding: rem(14) rem(19);
+}
+
+.p-footer__logo a:hover {
+  opacity: initial;
+}
+
+.p-footer__info {
+  text-align: right;
+  margin-top: rem(24);
+}
+
+.p-footer__tell {
+  justify-content: flex-end;
+}
+
+.p-footer__hour {
+  margin-top: rem(9);
 }

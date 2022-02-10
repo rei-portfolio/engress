@@ -1,0 +1,24 @@
+.p-case-card {
+}
+
+.p-case-card__img {
+  width: 100%;
+  position: relative;
+}
+
+.p-case-card__img::before {
+  content: "";
+  display: block;
+  padding-top: 61.071429%;
+}
+
+.p-case-card__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: inherit;
+}

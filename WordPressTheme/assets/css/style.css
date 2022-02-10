@@ -581,6 +581,10 @@ summary {
 	width: 100%;
 }
 
+.l-success {
+	margin-top: 2.4375rem;
+}
+
 .c-copy {
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -642,6 +646,12 @@ summary {
 	transform: rotate(-45deg);
 }
 
+.c-section-title {
+	font-size: 2.25rem;
+	font-weight: 700;
+	text-align: center;
+}
+
 .c-sub-btn {
 	border-radius: 5px;
 	color: #fff;
@@ -681,6 +691,50 @@ summary {
 	font-size: 3.125rem;
 }
 
+.p-card-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p-card-list__item {
+	max-width: calc(33.3333% - 1.875rem * 2 / 3);
+	width: 100%;
+}
+
+.p-card-list__item + .p-card-list__item {
+	margin-left: 1.875rem;
+}
+
+.p-card-list__item:nth-child(3n + 1) {
+	margin-left: 0;
+}
+
+.p-card-list__item:nth-child(n + 4) {
+	margin-top: 3.125rem;
+}
+
+.p-case-card__img {
+	position: relative;
+	width: 100%;
+}
+
+.p-case-card__img::before {
+	content: "";
+	display: block;
+	padding-top: 61.071429%;
+}
+
+.p-case-card__img img {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: inherit;
+	width: 100%;
+}
+
 .p-footer {
 	color: #1b224c;
 	margin-top: 100px;
@@ -694,11 +748,65 @@ summary {
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
+	padding: 2.1875rem 0 4.125rem;
 }
 
 .p-footer__items {
 	align-items: center;
 	display: flex;
+	padding-top: 0.6875rem;
+}
+
+.p-footer__item {
+	position: relative;
+}
+
+.p-footer__item::before {
+	background-color: #fff;
+	bottom: 0;
+	content: "";
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1px;
+}
+
+.p-footer__item:last-child:before {
+	content: none;
+}
+
+.p-footer__item a {
+	font-weight: 700;
+	padding: 0 1.625rem;
+}
+
+.p-footer__item:first-child a {
+	padding-left: 0;
+}
+
+.p-footer__logo a {
+	background-color: #fff;
+	display: block;
+	padding: 0.875rem 1.1875rem;
+}
+
+.p-footer__logo a:hover {
+	opacity: initial;
+}
+
+.p-footer__info {
+	margin-top: 1.5rem;
+	text-align: right;
+}
+
+.p-footer__tell {
+	justify-content: flex-end;
+}
+
+.p-footer__hour {
+	margin-top: 0.5625rem;
 }
 
 .p-header__inner {
