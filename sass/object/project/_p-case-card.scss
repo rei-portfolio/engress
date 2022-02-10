@@ -1,9 +1,17 @@
 .p-case-card {
 }
 
+.p-case-card__title {
+  color: $sub-text-color;
+  font-size: rem(16);
+  font-weight: $font-weight-bold;
+  line-height: 1.8125;
+}
+
 .p-case-card__img {
   width: 100%;
   position: relative;
+  margin-top: rem(9);
 }
 
 .p-case-card__img::before {
@@ -21,4 +29,43 @@
   width: 100%;
   height: 100%;
   transition: inherit;
+}
+
+.p-case-card__body {
+  margin-top: rem(16);
+}
+
+.p-case-card__category {
+  // width: 35.7%;
+  // max-width: calc(100 / 1280 * 100vw);
+
+  width: 100%;
+  max-width: rem(100);
+  display: inline-block;
+  padding: rem(5) rem(10);
+  background-color: $background;
+}
+
+.p-case-card__name {
+  // width: 61%;
+  width: 100%;
+  max-width: rem(172);
+  // max-width: calc(172 / 1280 * 100vw);
+
+  display: inline-block;
+  padding: rem(5) rem(8) rem(5) rem(10);
+  margin-left: rem(8);
+  background-color: $background;
+
+}
+
+.p-case-card__up {
+  padding: rem(5) rem(14);
+  margin-top: rem(10);
+  background-color: $background;
+}
+
+.p-case-card__info {
+  display: flex;
+  align-items: flex-start;
 }

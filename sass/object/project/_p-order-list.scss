@@ -1,0 +1,16 @@
+.p-order-list {
+
+}
+
+.p-order-list__item {
+    display: flex;
+    align-items: center;
+    padding: rem(23) 0;
+}
+
+.p-order-list__number {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    background-color: $ac-color;
+    padding: 0 rem(23);
+}

@@ -1,4 +1,4 @@
-<footer class="p-footer">
+<footer class="p-footer l-footer">
     <div class="p-footer__bgc">
         <div class="p-footer__inner l-inner">
             <ul class="p-footer__items">
