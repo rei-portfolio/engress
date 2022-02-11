@@ -4,7 +4,7 @@ $drawer-color: #1b224c; //ドロワー線の色
 
 .c-hamburger {
   display: none;
-  @include mq(sp) {
+  @include mq(tab) {
     display: inline-block;
     outline: none;
     -webkit-transition: all 0.3s ease-in-out;

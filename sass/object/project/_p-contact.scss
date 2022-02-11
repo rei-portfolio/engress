@@ -9,39 +9,39 @@
 }
 
 .p-contact__title {
-    color: $sub-text-color;
+  color: $sub-text-color;
 }
 
 .p-contact__btn {
-    margin-top: rem(16);
+  margin-top: rem(16);
 }
 
 .p-contact__link {
-    display: block;
-    margin-top: rem(22);
-    color: $sub-text-color;
-    text-decoration: underline;
+  display: inline-block;
+  margin-top: rem(22);
+  color: $sub-text-color;
+  text-decoration: underline;
 }
 
 .p-contact__info {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: rem(20);
-    margin-left: rem(-115);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: rem(20);
+  margin-left: rem(-115);
 }
 
 .p-contact__text {
-    font-weight: $font-weight-bold;
+  font-weight: $font-weight-bold;
 }
 
 .p-contact__number {
-    line-height: 1;
-    font-size: rem(36);
-    font-weight: $font-weight-bold;
-    margin-left: rem(20);
+  line-height: 1;
+  font-size: rem(36);
+  font-weight: $font-weight-bold;
+  margin-left: rem(20);
 }
 
 .p-contact__hour {
-    margin-left: rem(20);
+  margin-left: rem(20);
 }

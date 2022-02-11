@@ -1,16 +1,55 @@
 .p-order-list {
-
 }
 
 .p-order-list__item {
-    display: flex;
-    align-items: center;
-    padding: rem(23) 0;
+  display: flex;
+  align-items: center;
+  background-color: $pink-background;
+}
+
+.p-order-list__item + .p-order-list__item {
+  margin-top: rem(8);
+}
+
+.p-order-list__content {
+  display: flex;
+  align-items: center;
+  @include mq(sp) {
+    flex-direction: column;
+  }
 }
 
 .p-order-list__number {
-    display: inline-block;
-    font-weight: $font-weight-bold;
-    background-color: $ac-color;
-    padding: 0 rem(23);
+  display: inline-block;
+  color: $sub-text-color;
+  font-weight: $font-weight-bold;
+  background-color: $ac-color;
+  padding: rem(24) rem(23);
+}
+
+.p-order-list__title {
+  font-size: rem(18);
+  font-weight: $font-weight-bold;
+  padding: rem(23) rem(21);
+  width: 100%;
+  max-width: rem(214.5);
+}
+
+.p-order-list__text {
+  position: relative;
+  padding: rem(23) rem(21) rem(23) rem(53.5);
+  width: 100%;
+  max-width: rem(620.5);
+}
+
+.p-order-list__text::before {
+  content: "";
+  display: block;
+  width: rem(1);
+  height: rem(29);
+  background-color: $border;
+  position: absolute;
+  top: rem(17);
+  bottom: rem(17);
+  left: 0;
 }

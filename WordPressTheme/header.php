@@ -16,7 +16,7 @@
   <header class="l-header p-header">
 
     <div class="p-header__inner">
-      <div class="p-header__block">
+      <div class="p-header__left">
         <h1 class="p-header__logo c-logo">
           <a href="<?php echo esc_url(home_url('/')); ?>" class="c-logo__link">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.svg" alt="エングレス" />
@@ -39,7 +39,7 @@
         <!-- /.p-pc-nav -->
       </div>
 
-      <div class="p-header__block">
+      <div class="p-header__right">
         <div class="p-header__info">
           <p class="p-header__hour">平日08:00〜20:00</p>
           <div class="p-header__tell c-tell">
@@ -51,10 +51,10 @@
         </div>
 
         <div class="p-header__btn">
-          <a href="" class="c-sub-btn c-sub-btn--document">資料請求</a>
+          <a href="" class="c-small-btn c-small-btn--document">資料請求</a>
         </div>
         <div class="p-header__btn">
-          <a href="" class="c-sub-btn c-sub-btn--contact">お問い合わせ</a>
+          <a href="" class="c-small-btn c-small-btn--contact">お問い合わせ</a>
         </div>
       </div>
 

@@ -26,6 +26,15 @@ jQuery(function ($) {
       }
     });
 
+    // アコーディオン
+    // 最初開ける↓
+    $(".js-accordion-text--first").addClass("is-open");
+    $(".js-accordion-title--first").addClass("is-active");
+    $(".js-accordion-title").on("click", function () {
+      $(this).next().toggleClass("is-open");
+      $(this).toggleClass("is-active");
+    });
+
     /* スムーススクロール */
     jQuery('a[href^="#"]').click(function () {
       let header = jQuery(".js-header").height();

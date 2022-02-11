@@ -1,0 +1,36 @@
+.p-mv {
+  background-image: url(../img/top/mv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $sub-text-color;
+  text-align: center;
+  padding-top: rem(116);
+  padding-bottom: rem(86);
+  // padding-top: calc(116 / 1280 * 100vw);
+  // padding-bottom: calc(86 / 1280 * 100vw);
+}
+
+.p-mv__title {
+  font-size: rem(48);
+  font-weight: $font-weight-bold;
+  line-height: 1;
+}
+
+.p-mv__text {
+  font-size: rem(18);
+  margin-top: rem(25);
+  line-height: 1.72;
+}
+
+.p-mv__btn {
+  margin-top: rem(45);
+}
+
+.p-mv__link {
+  display: inline-block;
+  margin-top: rem(22);
+  color: $sub-text-color;
+  text-decoration: underline;
+  line-height: 1;
+}

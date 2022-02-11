@@ -1,8 +1,8 @@
 .p-sp-nav {
   display: none;
-  @include mq(sp) {
+  @include mq(tab) {
     display: block;
-    background-color: #000;
+    background-color: $background;
     // 横から出てくる場合
     transform: translateX(100%);
     transition: 0.3s ease;
@@ -11,7 +11,7 @@
 }
 
 .p-sp-nav__items {
-  padding: rem(143) 0 rem(208);
+  padding: rem(200) 0 rem(208);
   //   marginでheaderに刺さらないようにする
   margin-top: rem(50);
   height: 100vh;
@@ -23,9 +23,9 @@
   padding-top: rem(16);
   padding-bottom: rem(16);
   text-align: center;
-  color: #fff;
+  color: $text-color;
   font-size: rem(16);
-  letter-spacing: 0.125em;
+  font-weight: $font-weight-bold;
 }
 
 .is-drawerActive {

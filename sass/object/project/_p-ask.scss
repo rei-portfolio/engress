@@ -1,0 +1,35 @@
+.p-ask {
+  background-color: $blue-background;
+  padding-top: rem(63);
+  padding-bottom: rem(54);
+}
+
+.p-ask__title {
+  color: $sub-text-color;
+}
+
+.p-ask__items {
+  color: $sub-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: rem(65);
+  @include mq(sp) { 
+     flex-direction: column;
+  }
+}
+
+.p-ask__item {
+  font-size: rem(18);
+  font-weight: $font-weight-bold;
+  line-height: 2.166;
+}
+
+.p-ask__item + .p-ask__item {
+  margin-left: rem(30);
+}
+
+.p-ask__content {
+    margin-top: rem(83);
+}

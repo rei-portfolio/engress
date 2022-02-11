@@ -1,9 +1,8 @@
-.c-main-btn {
+.c-border__btn {
     display: inline-block;
     color: $sub-text-color;
     font-weight: $font-weight-bold;
-    padding: rem(16.5) rem(98);
-    background-color: $ac-color;
+    padding: rem(10.5) rem(43);
+    border: 1px solid $sub-text-color;
     border-radius: 30px;
 }
-

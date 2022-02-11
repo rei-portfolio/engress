@@ -1,7 +1,7 @@
 .p-pc-nav {
   height: inherit;
   display: block;
-  @include mq(sp) {
+  @include mq(tab) {
     display: none;
   }
 }

@@ -5,6 +5,8 @@ $sub-text-color: #fff;
 
 $ac-color: #f5a623;
 $blue-background: #1b224c;
+$pink-background: #F8F8F8;
+$border: #C3C3C3;
 
 // マウスホバー
 $opacity: 0.8; // 透過度
@@ -14,15 +16,18 @@ $font-family-base: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic
   "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; // ベースフォント
 $font-weight-base: 500; // ベースフォントウェイト
 $font-weight-bold: 700; // サブフォントウェイト
-$lh: 1.3125; // ベース行間
+
+$lh: 1.6875; // ベース行間
 $font-size-base: 16px; // ベースフォントサイズ
 
 // ---
 // レイアウト
 // ---
 $l-inner: 900px; // インナー幅
-$l-sp: 768px; // spサイズ
-$l-tab: 1024px; // タブレットサイズ
+// $l-sp: 768px; // spサイズ
+$l-sp: 767px; // spサイズ
+// $l-tab: 1024px; // タブレットサイズ
+$l-tab: 1067px; // タブレットサイズ
 $l-pc: 1440px; // パソコン幅
 
 // ブレークポイント（PC基準）

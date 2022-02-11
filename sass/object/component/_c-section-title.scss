@@ -1,9 +1,10 @@
 .c-section-title {
-    font-size: rem(36);
-    font-weight: $font-weight-bold;
-    text-align: center;
+  font-size: rem(36);
+  font-weight: $font-weight-bold;
+  line-height: 1.388;
+  text-align: center;
 }
 
-.c-section-title.c-section-title--small {
-    font-size: rem(32);
+.c-section-title.c-section-title--sub {
+  font-size: rem(32);
 }

@@ -1,0 +1,36 @@
+.p-border-box {
+  background-color: $background;
+  padding: rem(12) rem(16);
+  text-align: center;
+}
+
+.p-border-box__inner {
+  border: 5px solid $blue-background;
+  padding: rem(24);
+}
+
+
+
+.p-border-box__under {
+    position: relative;
+    z-index: 2;
+}
+
+.p-border-box__under::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -10;
+    bottom: rem(8);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: rem(9);
+    background-color: $ac-color;
+}
+
+.p-border-box__text {
+    font-size: rem(18);
+    line-height: 1.722;
+    margin-top: rem(25);
+}

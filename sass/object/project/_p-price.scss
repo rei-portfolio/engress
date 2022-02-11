@@ -1,0 +1,19 @@
+.p-price__bg {
+  background-image: url(../img/top/price.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: rem(61);
+  padding-bottom: rem(53);
+  color: $sub-text-color;
+}
+
+.p-price__text {
+  font-size: rem(26);
+  font-weight: $font-weight-bold;
+}
+
+.p-price__btn {
+  margin-top: rem(27);
+}
