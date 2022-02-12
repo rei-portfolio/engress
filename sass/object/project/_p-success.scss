@@ -10,4 +10,7 @@
 
 .p-success__items {
     margin-top: rem(137);
+    @include mq(sp) { 
+       margin-top: rem(48);
+    }
 }

@@ -1,3 +1,6 @@
 .l-contact {
-    margin-top: rem(119);
+  margin-top: rem(119);
+  @include mq(sp) {
+    margin-top: rem(70);
+  }
 }

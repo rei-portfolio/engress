@@ -28,8 +28,8 @@ $drawer-color: #1b224c; //ドロワー線の色
   &::after {
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: $drawer-width;
+    height: $drawer-height;
     background-color: inherit;
     content: "";
     -webkit-transition: inherit;

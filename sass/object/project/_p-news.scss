@@ -4,6 +4,9 @@
 
 .p-news__title {
   text-align: left;
+  @include mq(sp) { 
+    text-align: center;
+ }
 }
 
 .p-news__sub-title a {

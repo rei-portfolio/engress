@@ -29,6 +29,11 @@
   justify-content: center;
   margin-top: rem(20);
   margin-left: rem(-115);
+  @include mq(sp) { 
+     flex-direction: column;
+     margin-left: 0;
+     align-items: center;
+  }
 }
 
 .p-contact__text {
@@ -40,8 +45,16 @@
   font-size: rem(36);
   font-weight: $font-weight-bold;
   margin-left: rem(20);
+  @include mq(sp) { 
+     margin-left: 0;
+     margin-top: rem(10);
+  }
 }
 
 .p-contact__hour {
   margin-left: rem(20);
+  @include mq(sp) { 
+     margin-left: 0;
+     margin-top: rem(10);
+  }
 }

@@ -1,3 +1,10 @@
+.p-price__inner.l-inner {
+  @include mq(sp) { 
+     max-width: 100%;
+     padding: 0;
+  }
+}
+
 .p-price__bg {
   background-image: url(../img/top/price.jpg);
   background-position: center;
@@ -7,11 +14,18 @@
   padding-top: rem(61);
   padding-bottom: rem(53);
   color: $sub-text-color;
+  @include mq(sp) { 
+     padding-left: $padding-sp;
+     padding-right: $padding-sp;
+  }
 }
 
 .p-price__text {
   font-size: rem(26);
   font-weight: $font-weight-bold;
+  @include mq(sp) { 
+     font-size: rem(24);
+  }
 }
 
 .p-price__btn {

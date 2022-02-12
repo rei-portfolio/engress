@@ -32,7 +32,12 @@
   height: inherit;
   z-index: 100;
   @include mq(tab) {
-    margin-left: rem(130);
+    // position: absolute;
+    // margin-left: rem(130);
+    margin-left: calc(130 / 768 * 100vw);
+    // margin-left: calc(180 / 1068 * 100vw);
+    // top: 0;
+    // right: calc(50% - #{rem(280)});
   }
   @include mq(sp) {
     display: none;
@@ -45,8 +50,8 @@
   width: rem(136);
   height: rem(27);
   @include mq(sp) {
-    width: rem(74);
-    height: rem(25);
+    width: rem(100);
+    height: rem(20);
   }
 }
 

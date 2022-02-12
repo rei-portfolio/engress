@@ -32,6 +32,9 @@
 
 .p-blog__title {
   text-align: left;
+  @include mq(sp) { 
+     text-align: center;
+  }
 }
 
 .p-blog__sub-title a {

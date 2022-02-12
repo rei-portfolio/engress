@@ -1,9 +1,11 @@
 .p-case-card {
+ 
 }
 
 .p-case-card__title {
   color: $sub-text-color;
   font-size: rem(16);
+  // font-size: 16px;
   font-weight: $font-weight-bold;
   line-height: 1.8125;
 }

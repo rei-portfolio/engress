@@ -19,12 +19,12 @@
     <section class="p-ask">
         <div class="p-ask__inner l-inner">
             <p class="p-ask__title c-section-title">
-                TOEFL学習でこんな悩みありませんか？
+                TOEFL学習で<br class="u-hidden-pc"/>こんな悩みありませんか？
             </p>
             <ul class="p-ask__items">
-                <li class="p-ask__item">勉強の習慣が<br />身についていない</li>
-                <li class="p-ask__item">勉強しているはず<br />なのに点数が伸びない</li>
-                <li class="p-ask__item">正しい勉強方法が<br />わからない</li>
+                <li class="p-ask__item">勉強の習慣が<br class="u-hidden-sp" />身についていない</li>
+                <li class="p-ask__item">勉強しているはず<br class="u-hidden-sp" />なのに点数が伸びない</li>
+                <li class="p-ask__item">正しい勉強方法が<br class="u-hidden-sp" />わからない</li>
             </ul>
             <div class="p-ask__content p-border-box">
                 <div class="p-border-box__inner">
@@ -34,7 +34,7 @@
                         です
                     </h2>
                     <p class="p-border-box__text">
-                        完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br />TOEFLの苦手分野を克服します。
+                        完全オーダーメイドで、<br class="u-hidden-pc"/>１人１人の悩みに合わせた最適な指導で<br class="u-hidden-sp"/>TOEFLの苦手分野を克服します。
                     </p>
                 </div>
             </div>
@@ -156,26 +156,38 @@
             <ol class="p-use__items p-order-list">
                 <li class="p-order-list__item">
                     <span class="p-order-list__number">01</span>
-                    <!-- <div class="p-order-list__content"> -->
+                    <div class="p-order-list__content">
 
                         <h3 class="p-order-list__title">お問い合わせ</h3>
-                        <p class="p-order-list__text">まずはフォームまたはお電話からお申し込みください。まずはフォームまたはお電話からお申し込みください。まずはフォームまたはお電話からお申し込みください。</p>
-                    <!-- </div> -->
+                        <p class="p-order-list__text">まずはフォームまたはお電話からお申し込みください。</p>
+                    </div>
                 </li>
                 <li class="p-order-list__item">
                     <span class="p-order-list__number">02</span>
-                    <h3 class="p-order-list__title">ヒアリング</h3>
-                    <p class="p-order-list__text">現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</p>
+                    <div class="p-order-list__content">
+
+                        <h3 class="p-order-list__title">ヒアリング</h3>
+                        <p class="p-order-list__text">現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</p>
+                    </div>
+
                 </li>
                 <li class="p-order-list__item">
                     <span class="p-order-list__number">03</span>
-                    <h3 class="p-order-list__title">学習プランのご提供</h3>
-                    <p class="p-order-list__text">目標達成のために最適な学習プランをご提案致します。</p>
+                    <div class="p-order-list__content">
+
+                        <h3 class="p-order-list__title">学習プランのご提供</h3>
+                        <p class="p-order-list__text">目標達成のために最適な学習プランをご提案致します。</p>
+                    </div>
+
                 </li>
                 <li class="p-order-list__item">
                     <span class="p-order-list__number">04</span>
-                    <h3 class="p-order-list__title">ご入会</h3>
-                    <p class="p-order-list__text">お申込み完了後、レッスンがスタートします。</p>
+                    <div class="p-order-list__content">
+
+                        <h3 class="p-order-list__title">ご入会</h3>
+                        <p class="p-order-list__text">お申込み完了後、レッスンがスタートします。</p>
+                    </div>
+
                 </li>
 
             </ol>

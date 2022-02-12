@@ -9,7 +9,11 @@
   padding: rem(24);
 }
 
-
+.p-border-box__title {
+  @include mq(sp) { 
+    font-size: rem(18);
+  }
+}
 
 .p-border-box__under {
     position: relative;
@@ -21,11 +25,11 @@
     display: block;
     position: absolute;
     z-index: -10;
-    bottom: rem(8);
+    bottom: rem(3);
     left: 0;
     right: 0;
     width: 100%;
-    height: rem(9);
+    height: rem(5);
     background-color: $ac-color;
 }
 
@@ -33,4 +37,7 @@
     font-size: rem(18);
     line-height: 1.722;
     margin-top: rem(25);
+    @include mq(sp) { 
+      font-size: rem(16);
+    }
 }

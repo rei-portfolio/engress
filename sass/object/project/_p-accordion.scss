@@ -25,8 +25,9 @@
   width: rem(25);
   height: rem(3);
   right: rem(20.5);
-  @include mq(sp) {
-    display: none;
+  @include mq(sp) { 
+     width: rem(16);
+     height: rem(2);
   }
 }
 

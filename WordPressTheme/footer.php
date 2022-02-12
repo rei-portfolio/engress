@@ -2,13 +2,17 @@
     <div class="p-footer__bgc">
         <div class="p-footer__inner l-inner">
             <ul class="p-footer__items">
-                <li class="p-footer__item"><a href="">ホーム</a></li>
-                <li class="p-footer__item"><a href="">お知らせ</a></li>
-                <li class="p-footer__item"><a href="">ブログ</a></li>
-                <li class="p-footer__item"><a href="">コース・料金</a></li>
+                <div class="p-footer__list">
+                    <li class="p-footer__item"><a href="">ホーム</a></li>
+                    <li class="p-footer__item"><a href="">お知らせ</a></li>
+                </div>
+                <div class="p-footer__list">
+                    <li class="p-footer__item"><a href="">ブログ</a></li>
+                    <li class="p-footer__item"><a href="">コース・料金</a></li>
+                </div>
             </ul>
-            <div class="p-footer__block">
 
+            <div class="p-footer__block">
                 <div class="p-footer__logo c-logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="c-logo__link">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.svg" alt="エングレス" />
