@@ -26,18 +26,19 @@ $font-size-base: 16px; // ベースフォントサイズ
 // レイアウト
 // ---
 $l-inner: 900px; // インナー幅
-// $l-sp: 768px; // spサイズ
+$l-sm: 375px; // spサイズ
 $l-sp: 768px; // spサイズ
-$l-tab: 1024px; // タブレットサイズ
-$l-md: 1068px; // タブレットサイズ
-// $l-pc: 1440px; // パソコン幅
-$l-pc: 1280px; // パソコン幅
+$l-tab: 1068px; // タブレットサイズ
+$l-pc: 1440px; // パソコン幅
 
 // ブレークポイント（PC基準）
 $breakpoints: (
+  // add
+  "sm": "screen and (max-width: #{$l-sm - 1})",
   "sp": "screen and (max-width: #{$l-sp - 1})",
   "tab": "screen and (max-width: #{$l-tab - 1 })",
-  "md": "screen and (max-width: #{$l-md - 1 })",
+  // add
+  "inner": "screen and (max-width: #{$l-inner})",
   "pc": "screen and (min-width: #{$l-pc})",
 );
 

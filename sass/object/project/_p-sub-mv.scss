@@ -1,0 +1,12 @@
+.p-sub-mv {
+  height: rem(220);
+  position: relative;
+}
+
+.p-sub-mv__title {
+  color: $sub-text-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

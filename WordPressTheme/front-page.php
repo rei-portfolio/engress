@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+<!-- url -->
+<?php
+$home = esc_url(home_url('/'));
+$price = esc_url(home_url('/price/'));
+$works = esc_url(home_url('/works/'));
+$culture = esc_url(home_url('/culture/'));
+$topics = esc_url(home_url('/topics/'));
+$contact = esc_url(home_url('/contact/'));
+?>
+
 <main>
     <!-- mv -->
     <section class="p-mv">
@@ -19,7 +29,7 @@
     <section class="p-ask">
         <div class="p-ask__inner l-inner">
             <p class="p-ask__title c-section-title">
-                TOEFL学習で<br class="u-hidden-pc"/>こんな悩みありませんか？
+                TOEFL学習で<br class="u-hidden-tab" />こんな悩みありませんか？
             </p>
             <ul class="p-ask__items">
                 <li class="p-ask__item">勉強の習慣が<br class="u-hidden-sp" />身についていない</li>
@@ -34,7 +44,7 @@
                         です
                     </h2>
                     <p class="p-border-box__text">
-                        完全オーダーメイドで、<br class="u-hidden-pc"/>１人１人の悩みに合わせた最適な指導で<br class="u-hidden-sp"/>TOEFLの苦手分野を克服します。
+                        完全オーダーメイドで、<br class="u-hidden-tab" />１人１人の悩みに合わせた最適な指導で<br class="u-hidden-sp" />TOEFLの苦手分野を克服します。
                     </p>
                 </div>
             </div>
@@ -298,21 +308,7 @@
     <!-- ../section-box -->
 
     <!-- contact -->
-    <section class="p-contact l-contact">
-        <div class="p-contact__inner">
-            <h2 class="p-contact__title c-section-title c-section-title--sub">
-                まずは無料で資料請求から</h2>
-            <div class="p-contact__btn">
-                <a href="" class="c-main-btn">資料請求</a>
-            </div>
-            <a href="" class="p-contact__link">お問い合わせ</a>
-        </div>
-        <div class="p-contact__info">
-            <p class="p-contact__text">お電話でのお問い合わせはこちら</p>
-            <p class="p-contact__number">0123-456-7890</p>
-            <p class="p-contact__hour">平日 08:00~20:00</p>
-        </div>
-    </section>
+    <?php get_template_part('includes/contact'); ?>
     <!-- ../contact -->
 </main>
 

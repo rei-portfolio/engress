@@ -25,13 +25,13 @@
 
         <nav class="p-header-pc-nav p-pc-nav">
           <ul class="p-pc-nav__items">
-            <li class="p-pc-nav__item"><a href="">ホーム</a></li>
+            <li class="p-pc-nav__item"><a href="<?php echo esc_url(home_url('/')) ?>">ホーム</a></li>
             <!-- /.p-pc-nav__item -->
             <li class="p-pc-nav__item"><a href="">お知らせ</a></li>
             <!-- /.p-pc-nav__item -->
             <li class="p-pc-nav__item"><a href="">ブログ</a></li>
             <!-- /.p-pc-nav__item -->
-            <li class="p-pc-nav__item"><a href="">コース・料金</a></li>
+            <li class="p-pc-nav__item"><a href="<?php echo esc_url( home_url( '/price/' ) ); ?>">コース・料金</a></li>
             <!-- /.p-pc-nav__item -->
           </ul>
           <!-- /.p-pc-nav__items -->

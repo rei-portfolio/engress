@@ -603,6 +603,14 @@ summary {
 	width: 100%;
 }
 
+.l-price-plan {
+	margin-top: 3.625rem;
+}
+
+.l-price-table {
+	margin-top: 5.625rem;
+}
+
 .l-price {
 	margin-top: 5.8125rem;
 }
@@ -733,6 +741,12 @@ summary {
 .c-small-btn.c-small-btn--contact {
 	background-color: #1b224c;
 	padding: 0.9375rem 1.875rem;
+}
+
+.c-sub-title {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
 }
 
 .c-tell {
@@ -1395,6 +1409,50 @@ summary {
 	margin-left: 0.5625rem;
 }
 
+.p-price-plan__box {
+	align-items: center;
+	color: #fff;
+	display: flex;
+	font-size: 1.375rem;
+	font-weight: 700;
+	justify-content: center;
+	margin-top: 3.75rem;
+}
+
+.p-price-plan__join {
+	background-color: #1b224c;
+	line-height: 1;
+	padding: 2.125rem 3.625rem;
+}
+
+.p-price-plan__month {
+	background-color: #1b224c;
+	line-height: 1;
+	margin-left: 6.125rem;
+	padding: 2.125rem 6rem;
+	position: relative;
+}
+
+.p-price-plan__month::before,
+.p-price-plan__month::after {
+	background-color: #1b224c;
+	content: "";
+	display: block;
+	height: 0.125rem;
+	left: -3.75rem;
+	position: absolute;
+	top: 3.03125rem;
+	width: 1.6875rem;
+}
+
+.p-price-plan__month::before {
+	transform: rotate(90deg);
+}
+
+.p-price-plan__text {
+	margin-top: 2.8125rem;
+}
+
 .p-price__bg {
 	background-image: url(../img/top/price.jpg);
 	background-position: center;
@@ -1446,6 +1504,19 @@ summary {
 	transition: 0.3s;
 }
 
+.p-sub-mv {
+	height: 13.75rem;
+	position: relative;
+}
+
+.p-sub-mv__title {
+	color: #fff;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .p-success {
 	background-color: #1b224c;
 	padding-bottom: 3.75rem;
@@ -1467,6 +1538,10 @@ summary {
 
 .p-use__items {
 	margin-top: 3.3125rem;
+}
+
+.u-hidden-tab {
+	display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1496,19 +1571,7 @@ html {
 
 }
 
-@media screen and (min-width: 1280px) {
-
-.u-hidden-pc {
-	display: none;
-}
-
-}
-
-@media screen and (max-width: 1023px) {
-
-html {
-	font-size: 1.77778vw;
-}
+@media screen and (max-width: 1067px) {
 
 .c-hamburger {
 	display: inline-block;
@@ -1559,6 +1622,14 @@ html {
 	overflow: hidden;
 	transform: translateX(100%);
 	transition: 0.3s ease;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+html {
+	font-size: 1.77778vw;
 }
 
 }
@@ -1639,7 +1710,7 @@ a:hover {
 }
 
 .p-border-box__title {
-	font-size: 1.125rem;
+	font-size: 1.1875rem;
 }
 
 .p-border-box__text {
@@ -1757,7 +1828,7 @@ a:hover {
 .p-footer__info {
 	margin-left: 1.25rem;
 	margin-top: 0;
-	max-width: 8.125rem;
+	max-width: 9.6875rem;
 	width: 100%;
 }
 
@@ -1827,7 +1898,7 @@ a:hover {
 }
 
 .p-price__text {
-	font-size: 1.5rem;
+	font-size: 1.4375rem;
 }
 
 .p-success__items {
@@ -1843,8 +1914,20 @@ a:hover {
 	margin-top: 3.625rem;
 }
 
+.u-hidden-tab {
+	display: block;
+}
+
 .u-hidden-sp {
 	display: none;
+}
+
+}
+
+@media screen and (max-width: 374px) {
+
+html {
+	font-size: 4.26667vw;
 }
 
 }

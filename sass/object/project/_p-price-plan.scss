@@ -1,0 +1,41 @@
+.p-price-plan__box {
+    color: $sub-text-color;
+    font-weight: $font-weight-bold;
+    font-size: rem(22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(60);
+}
+.p-price-plan__join {
+    line-height: 1;
+    background-color: $blue-background;
+    padding: rem(34) rem(58);
+}
+.p-price-plan__month {
+    line-height: 1;
+    position: relative;
+    background-color: $blue-background;
+    padding: rem(34) rem(96);
+    margin-left: rem(98);
+
+}
+.p-price-plan__month::before,
+.p-price-plan__month::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: rem(48.5);
+    left: rem(-60);
+    width: rem(27);
+    height: rem(2);
+    background-color: $blue-background;
+}
+
+.p-price-plan__month::before {
+    transform:rotate(90deg);
+}
+
+.p-price-plan__text {
+    margin-top: rem(45);
+}

@@ -1,9 +1,10 @@
 
-.u-hidden-pc {
-	// PC時に非表示
-
-	@include mq("pc") {
-		display: none;
+.u-hidden-tab {
+	// add
+	// タブレットから非表示
+  display: none;
+	@include mq("sp") {
+		display: block;
 	}
 }
 
