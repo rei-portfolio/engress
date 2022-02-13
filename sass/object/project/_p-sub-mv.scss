@@ -1,6 +1,11 @@
 .p-sub-mv {
-  height: rem(220);
+  min-height: rem(220);
   position: relative;
+}
+
+.p-sub-mv__img,
+.p-sub-mv__img img {
+  min-height: inherit;
 }
 
 .p-sub-mv__title {

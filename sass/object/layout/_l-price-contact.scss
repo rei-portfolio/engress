@@ -1,0 +1,6 @@
+.l-price-contact {
+  margin-top: rem(104);
+  @include mq(sp) {
+    margin-top: rem(59);
+  }
+}

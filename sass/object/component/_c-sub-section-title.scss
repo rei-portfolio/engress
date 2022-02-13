@@ -1,5 +1,8 @@
-.c-sub-title {
+.c-sub-section-title {
     font-size: rem(32);
     text-align: center;
     font-weight: $font-weight-bold;
+    @include mq(sp) { 
+        font-size: rem(24);
+     }
 }

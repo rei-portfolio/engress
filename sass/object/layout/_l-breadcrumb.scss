@@ -1,0 +1,10 @@
+.l-breadcrumb {
+  font-size: rem(12);
+  background-color: $pink-background;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+}
+
+.l-breadcrumb span:not(:last-child) a{
+  text-decoration: underline;
+}

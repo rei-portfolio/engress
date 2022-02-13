@@ -19,9 +19,9 @@ $contact = esc_url(home_url('/contact/'));
             日本人へのTOEFL指導歴豊かな講師陣の<br />コーチング型TOEFLスクール
         </p>
         <div class="p-mv__btn">
-            <a href="" class="c-main-btn">資料請求</a>
+            <a href="<?php echo $contact ?>" class="c-main-btn">資料請求</a>
         </div>
-        <a href="" class="p-mv__link">お問い合わせ</a>
+        <a href="<?php echo $contact ?>" class="p-mv__link">お問い合わせ</a>
     </section>
     <!-- ../mv -->
 
@@ -308,7 +308,9 @@ $contact = esc_url(home_url('/contact/'));
     <!-- ../section-box -->
 
     <!-- contact -->
-    <?php get_template_part('includes/contact'); ?>
+    <section class="p-contact l-contact">
+        <?php get_template_part('includes/contact'); ?>
+    </section>
     <!-- ../contact -->
 </main>
 

@@ -35,6 +35,17 @@ jQuery(function ($) {
       $(this).toggleClass("is-active");
     });
 
+    // スクロールヒント、スマホだけ
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      new ScrollHint(".js-scrollable", {
+        scrollHintIconAppendClass: "scroll-hint-icon-white",
+        enableOverflowScrolling: true,
+        i18n: {
+          scrollable: "スクロールできます",
+        },
+      });
+    }
+
     /* スムーススクロール */
     jQuery('a[href^="#"]').click(function () {
       let header = jQuery(".js-header").height();
