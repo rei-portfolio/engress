@@ -1,27 +1,31 @@
-
 .p-contact-button__submit {
-	-webkit-appearance: none;
-	background-color: rgba(0, 0, 0, 1);
-	background-image: none;
-	border: none;
-	border-radius: 0;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	margin: 0;
-	padding: rem(11) rem(66);
-	text-decoration: none;
-  font-size: rem(14);
-  // letter-spacing: 0.15em;
+  -webkit-appearance: none;
+  background-color: $blue-background;
+  background-image: none;
+  border: none;
+  border-radius: 5px;
+  color: $sub-text-color;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: rem(17) rem(68);
+  text-decoration: none;
+  font-size: rem(16);
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
+
 }
 
 .p-contact-button__submit:hover,
 .p-contact-button__submit:focus {
-	outline: none;
+  outline: none;
+  opacity: $opacity;
+  @include mq(sp) {
+    opacity: initial;
+  }
 }
 
 .p-contact-button__submit::-moz-foucus-inner {
-	border: none;
-	padding: 0;
+  border: none;
+  padding: 0;
 }

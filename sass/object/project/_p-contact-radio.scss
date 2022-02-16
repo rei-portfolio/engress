@@ -1,59 +1,55 @@
-$check_background: #333;
-
 .p-contact-radio {
-  padding-left: rem(10);
   display: flex;
   flex-direction: column;
-	@include mq(tab){
-		flex-direction: row;
-	}
 }
-
 
 // .p-contact-radio__item {
 // 	display: none;
 // }
 
 input[type="radio"] + span {
-	cursor: pointer;
-	display: inline-block;
-	// margin: 0 0.2em 0;
-	padding: 5px 15px 10px 25px;
-	position: relative;
+  cursor: pointer;
+  display: inline-block;
+  // margin: 0 0.2em 0;
+  padding: rem(9) 0 rem(9) rem(39);
+  position: relative;
+  @include mq(sp) { 
+     font-size: rem(14);
+  }
 }
 
 input[type="radio"] + span::before {
-	-webkit-transform: translateY(-50%);
-	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.16);
-	border-radius: 50%;
-	content: "";
-	display: block;
-	height: 16px;
-	left: 0;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 16px;
+  background: #fff;
+  border: 1px solid $form_background;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  width: rem(20);
+  height: rem(20);
+  position: absolute;
+  top: 51%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 
 input[type="radio"] + span::after {
-	-webkit-transform: translateY(-50%);
-	background: $check_background;
-	border: 1px solid transparent;
-	border-radius: 50%;
-	content: "";
-	height: 8px;
-	left: 4px;
-	opacity: 0;
-	padding: 2px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: all 0.3s ease 0s;
-	width: 8px;
+  background: $form_background;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+  height: rem(8);
+  left: rem(6);
+  opacity: 0;
+  padding: rem(2);
+  position: absolute;
+  top: 51%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  width: rem(8);
 }
 
 input[type="radio"]:checked + span::after {
-	opacity: 1;
+  opacity: 1;
 }

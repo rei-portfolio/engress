@@ -257,8 +257,8 @@ $contact = esc_url(home_url('/contact/'));
                             <h3 class="p-blog__sub-title">
                                 <a href="">
                                     Engress説明会in大阪の模様をお伝えします
+                                </a>
                             </h3>
-                            </a>
                             <time datetime="<?php the_time('c'); ?>" class="p-blog__date"><?php the_time('Y-m-d'); ?></time>
                         </div>
                     </li>
@@ -270,8 +270,8 @@ $contact = esc_url(home_url('/contact/'));
                             <h3 class="p-blog__sub-title">
                                 <a href="">
                                     Engress説明会in大阪の模様をお伝えします
+                                </a>
                             </h3>
-                            </a>
                             <time datetime="<?php the_time('c'); ?>" class="p-blog__date"><?php the_time('Y-m-d'); ?></time>
                         </div>
                     </li>

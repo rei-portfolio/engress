@@ -1,0 +1,6 @@
+.p-sub-blog__item {
+  margin-top: rem(60);
+  @include mq(sp) {
+    margin-top: rem(50);
+  }
+}
