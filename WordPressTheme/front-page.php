@@ -8,6 +8,7 @@ $works = esc_url(home_url('/works/'));
 $culture = esc_url(home_url('/culture/'));
 $topics = esc_url(home_url('/topics/'));
 $contact = esc_url(home_url('/contact/'));
+
 ?>
 
 <main>
@@ -249,32 +250,62 @@ $contact = esc_url(home_url('/contact/'));
             <section class="p-blog l-blog">
                 <h2 class="p-blog__title c-section-title c-section-title--sub">ブログ</h2>
                 <ul class="p-blog__items">
-                    <li class="p-blog__item">
-                        <figure class="p-blog__img">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/blog01.jpg" alt="">
-                        </figure>
-                        <div class="p-blog__body">
-                            <h3 class="p-blog__sub-title">
-                                <a href="">
-                                    Engress説明会in大阪の模様をお伝えします
-                                </a>
-                            </h3>
-                            <time datetime="<?php the_time('c'); ?>" class="p-blog__date"><?php the_time('Y-m-d'); ?></time>
-                        </div>
-                    </li>
-                    <li class="p-blog__item">
-                        <figure class="p-blog__img">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/blog01.jpg" alt="">
-                        </figure>
-                        <div class="p-blog__body">
-                            <h3 class="p-blog__sub-title">
-                                <a href="">
-                                    Engress説明会in大阪の模様をお伝えします
-                                </a>
-                            </h3>
-                            <time datetime="<?php the_time('c'); ?>" class="p-blog__date"><?php the_time('Y-m-d'); ?></time>
-                        </div>
-                    </li>
+
+                    <?php
+                    $blog_query = new WP_Query(
+                        array(
+                            'post_type'      => 'post',
+                            'posts_per_page' => 3,
+                        )
+                    );
+                    ?>
+                    <?php if ($blog_query->have_posts()) : ?>
+                        <?php while ($blog_query->have_posts()) : ?>
+                            <?php $blog_query->the_post(); ?>
+
+                            <li class="p-blog__item">
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <figure class="p-blog__img">
+                                        <?php the_post_thumbnail(); ?>
+                                    </figure>
+                                <?php else : ?>
+                                    <figure class="p-blog__img">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/blog/blog-mv.jpg" alt="" />
+                                    </figure>
+                                <?php endif; ?>
+
+                                <div class="p-blog__body">
+                                    <div class="p-blog__category">
+                                        <!-- カテゴリー -->
+                                        <?php
+                                        $category = get_the_category();
+                                        if ($category[0]) {
+                                            echo '<a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->name . '</a>';
+                                        }
+                                        ?>
+                                    </div>
+                                    <h3 class="p-blog__sub-title">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <!-- 文字数制限 -->
+                                            <?php
+                                            if (mb_strlen($post->post_title, 'UTF-8') > 50) {
+                                                $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
+                                                echo $title . '……';
+                                            } else {
+                                                echo $post->post_title;
+                                            }
+                                            ?>
+                                        </a>
+                                    </h3>
+
+                                    <time datetime="<?php the_time('c'); ?>" class="p-blog__date"><?php the_time('Y-m-d'); ?></time>
+                                </div>
+                            </li>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
+
                 </ul>
             </section>
             <!-- ../blog -->
@@ -282,22 +313,40 @@ $contact = esc_url(home_url('/contact/'));
             <section class="p-news l-news">
                 <h2 class="p-news__title c-section-title c-section-title--sub">お知らせ</h2>
                 <ul class="p-news__items">
-                    <li class="p-news__item">
-                        <time datetime="<?php the_time('c'); ?>" class="p-news__date"><?php the_time('Y-m-d'); ?></time>
-                        <h3 class="p-news__sub-title">
-                            <a href="">
-                                2021年のスケジュールについて
-                            </a>
-                        </h3>
-                    </li>
-                    <li class="p-news__item">
-                        <time datetime="<?php the_time('c'); ?>" class="p-news__date"><?php the_time('Y-m-d'); ?></time>
-                        <h3 class="p-news__sub-title">
-                            <a href="">
-                                2021年のスケジュールについて
-                            </a>
-                        </h3>
-                    </li>
+
+                    <?php
+                    $news_query = new WP_Query(
+                        array(
+                            'post_type'      => 'news',
+                            'posts_per_page' => 3,
+                        )
+                    );
+                    ?>
+                    <?php if ($news_query->have_posts()) : ?>
+                        <?php while ($news_query->have_posts()) : ?>
+                            <?php $news_query->the_post(); ?>
+
+                            <li class="p-news__item">
+                                <time datetime="<?php the_time('c'); ?>" class="p-news__date"><?php the_time('Y-m-d'); ?></time>
+                                <h3 class="p-news__sub-title">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <!-- 文字数制限 -->
+                                        <?php
+                                        if (mb_strlen($post->post_title, 'UTF-8') > 50) {
+                                            $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
+                                            echo $title . '……';
+                                        } else {
+                                            echo $post->post_title;
+                                        }
+                                        ?>
+                                    </a>
+                                </h3>
+                            </li>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
+
                 </ul>
             </section>
             <!-- ../news -->

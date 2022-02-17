@@ -149,3 +149,12 @@ function my_excerpt_more( $more ) {
 
 }
 add_filter( 'excerpt_more', 'my_excerpt_more' );
+
+
+// WP Social Bookmarking Light
+function wpSns() {
+	if (function_exists("wp_social_bookmarking_light_output_e")) {
+	  wp_social_bookmarking_light_output_e();
+	}
+  }
+  add_shortcode('socialBtns', 'wpSns');
