@@ -270,7 +270,7 @@ $contact = esc_url(home_url('/contact/'));
                                     </figure>
                                 <?php else : ?>
                                     <figure class="p-blog__img">
-                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/blog/blog-mv.jpg" alt="" />
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/no-img.png" alt="" />
                                     </figure>
                                 <?php endif; ?>
 

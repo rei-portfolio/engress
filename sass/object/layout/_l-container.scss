@@ -1,3 +1,10 @@
 .l-container {
-    margin-top: rem(60);
+  margin-top: rem(60);
+}
+
+.l-container__inner {
+  display: flex;
+  @include mq(sp) {
+    flex-direction: column;
+  }
 }

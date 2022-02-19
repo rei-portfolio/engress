@@ -1,0 +1,5 @@
+.l-relate {
+  @include mq(sp) {
+    margin-top: rem(50);
+  }
+}

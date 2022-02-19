@@ -78,7 +78,7 @@
 
                     </li>
                     <li class="p-price-list__item">
-                        <h3 class="p-price-list__sub-title p-price-list__sub-title--recommend">
+                        <h3 class="p-price-list__sub-title p-price-list__sub-title--pickup">
                             <spn class="p-price-list__br">
                                 おすすめ
                             </spn>
@@ -87,7 +87,7 @@
                         <div class="p-price-list__body">
 
                             <div class="p-price-list__block">
-                                <p class="p-price-list__price p-price-list__price--recommend">95,000円~</p>
+                                <p class="p-price-list__price p-price-list__price--pickup">95,000円~</p>
                                 <p class="p-price-list__month">*月額（税抜価格）</p>
                             </div>
                             <div class="p-price-list__content">

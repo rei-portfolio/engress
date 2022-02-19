@@ -1,0 +1,13 @@
+.p-category__items {
+  list-style-type: disc;
+  margin-top: rem(22);
+  margin-left: rem(20);
+}
+
+
+
+.p-category__item a {
+  font-size: rem(16);
+  font-weight: $font-weight-bold;
+  padding: rem(8) 0;
+}
