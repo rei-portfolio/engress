@@ -200,11 +200,11 @@ input[type="search"]::-webkit-search-decoration {
 /* 挙動
 ---------------------------------------------------------------------------- */
 /* hover */
-input:hover,
-textarea:hover,
-select:hover {
-  border-color: #666;
-}
+// input:hover,
+// textarea:hover,
+// select:hover {
+//   border-color: #666;
+// }
 
 // input[type="radio"] + span:hover,
 // input[type="checkbox"] + span:hover {
@@ -243,6 +243,7 @@ select:hover {
 // 	background: #3498db;
 // 	color: #fff;
 // }
+
 
 /* focus */
 input:focus,

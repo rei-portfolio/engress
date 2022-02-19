@@ -192,12 +192,6 @@ input[type="search"]::-webkit-search-decoration {
 
 /* hover */
 
-input:hover,
-textarea:hover,
-select:hover {
-	border-color: #666;
-}
-
 /* checked */
 
 /* focus */
@@ -484,7 +478,8 @@ form {
 }
 
 label {
-	display: inline-block;
+	cursor: pointer;
+	display: block;
 }
 
 a,
@@ -556,7 +551,6 @@ summary {
 
 .l-404 {
 	margin-top: 6.25rem;
-	min-height: 50vh;
 }
 
 .l-404__text {
@@ -585,6 +579,10 @@ summary {
 
 .l-category {
 	margin-top: 3.125rem;
+}
+
+.l-contact-footer {
+	margin-top: 5.125rem;
 }
 
 .l-contact {
@@ -637,6 +635,13 @@ summary {
 
 .l-pickup {
 	margin-top: 3.75rem;
+}
+
+.l-position-footer {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
 }
 
 .l-price-contact {
@@ -692,6 +697,10 @@ summary {
 
 .l-success {
 	margin-top: 2.4375rem;
+}
+
+.l-thanks {
+	margin-top: 5.1875rem;
 }
 
 .l-use {
@@ -2291,10 +2300,6 @@ input[type="radio"]:checked + span::after {
 	margin-top: 3.75rem;
 }
 
-.p-sub-contact {
-	padding-bottom: 3.625rem;
-}
-
 .p-sub-contact__inner.l-inner {
 	max-width: 750px;
 }
@@ -2330,6 +2335,7 @@ input[type="radio"]:checked + span::after {
 	letter-spacing: 0.04em;
 	line-height: 1;
 	margin-right: 0.625rem;
+	padding-bottom: 0.75rem;
 }
 
 .p-sub-contact__bold {
@@ -2342,11 +2348,7 @@ input[type="radio"]:checked + span::after {
 	text-decoration: underline;
 }
 
-.p-sub-contact__item {
-	margin-top: 0.75rem;
-}
-
-.p-sub-contact__item.p-sub-contact__item--check {
+.p-sub-contact__item.p-contact-check {
 	margin-top: 2.0625rem;
 }
 
@@ -2392,6 +2394,16 @@ input[type="radio"]:checked + span::after {
 .p-test {
 	color: red;
 	font-size: 3.125rem;
+}
+
+.p-thanks {
+	text-align: center;
+}
+
+.p-thanks__link {
+	display: block;
+	margin-top: 5.1875rem;
+	text-decoration: underline;
 }
 
 .p-use__items {
@@ -2556,6 +2568,10 @@ a:hover {
 .l-side-contents {
 	margin-left: 0;
 	max-width: 100%;
+}
+
+.c-copy {
+	text-align: center;
 }
 
 .c-section-title {
@@ -3072,6 +3088,14 @@ input[type="radio"] + span {
 .p-test {
 	color: green;
 	font-size: 1.875rem;
+}
+
+.p-thanks__text {
+	font-size: 0.875rem;
+}
+
+.p-thanks__link {
+	margin-top: 3.75rem;
 }
 
 .p-use__items {

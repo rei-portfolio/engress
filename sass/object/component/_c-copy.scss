@@ -3,4 +3,7 @@
   font-weight: $font-weight-bold;
   text-align: right;
   padding: rem(10) $padding-pc;
+  @include mq(sp) { 
+     text-align: center;
+  }
 }

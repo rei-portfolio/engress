@@ -7,7 +7,7 @@
         <figure class="p-sub-mv__img">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/news/news-mv.jpg" alt="コース・料金">
         </figure>
-        <h2 class="p-sub-mv__title">ニュース</h2>
+        <h1 class="p-sub-mv__title">ニュース</h1>
     </div>
     <!-- ../sub-mv -->
 

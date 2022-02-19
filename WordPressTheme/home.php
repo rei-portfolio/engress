@@ -7,7 +7,7 @@
         <figure class="p-sub-mv__img">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/blog/blog-mv.jpg" alt="コース・料金">
         </figure>
-        <h2 class="p-sub-mv__title">ブログ</h2>
+        <h1 class="p-sub-mv__title">ブログ</h1>
     </div>
     <!-- ../sub-mv -->
 

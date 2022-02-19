@@ -19,11 +19,20 @@
 
     <div class="p-header__inner">
       <div class="p-header__left">
-        <h1 class="p-header__logo c-logo">
-          <a href="<?php echo esc_url(home_url('/')); ?>" class="c-logo__link">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.svg" alt="エングレス" />
-          </a>
-        </h1>
+        <!-- トップと下層でタグ変更 -->
+        <?php if (is_front_page()) {
+          echo '<h1 class="p-header__logo c-logo">';
+        } else {
+          echo '<div class="p-header__logo c-logo">';
+        } ?>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="c-logo__link">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.svg" alt="エングレス" />
+        </a>
+        <?php if (is_front_page()) {
+          echo '</h1>';
+        } else {
+          echo '</div>';
+        } ?>
 
         <nav class="p-header-pc-nav p-pc-nav">
           <ul class="p-pc-nav__items">

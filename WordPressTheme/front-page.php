@@ -116,43 +116,68 @@ $contact = esc_url(home_url('/contact/'));
             <h2 class="p-success__title c-section-title">TOEFL成功事例</h2>
             <ul class="p-success__items p-card-list">
                 <li class="p-card-list__item p-case-card">
-                    <h3 class="p-case-card__title">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
-                    <figure class="p-case-card__img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/case01.png" alt="toefl ibt 100点を突破してコロンビア大学大学院に進学できました">
-                    </figure>
+                    <!-- acf -->
+                    <h3 class="p-case-card__title"><?php the_field('case_text'); ?></h3>
+                    <!-- altタグ指定する場合 -->
+                    <?php
+                    $image = get_field('case_img'); //フィールド名はcase_img
+                    if (!empty($image)) {
+                        $url = $image['url']; //画像のURLを変数$urlに代入
+                        $alt = $image['alt']; //画像のaltを変数$altに代入
+                    ?>
+                        <figure class="p-case-card__img">
+                            <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                        </figure>
+                    <?php } ?>
                     <div class="p-case-card__body">
                         <div class="p-case-card__info">
-                            <span class="p-case-card__category">会社員</span>
-                            <span class="p-case-card__name">T.Fujiyamaさん</span>
+                            <span class="p-case-card__category"><?php the_field('case_category'); ?></span>
+                            <span class="p-case-card__name"><?php the_field('case_name'); ?></span>
                         </div>
-                        <p class="p-case-card__up">3ヶ月でTOEFL80→108点</p>
+                        <p class="p-case-card__up"><?php the_field('case_up'); ?></p>
                     </div>
                 </li>
                 <li class="p-card-list__item p-case-card">
-                    <h3 class="p-case-card__title">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</h3>
-                    <figure class="p-case-card__img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/case02.png" alt="toefl ibt 100点を突破してコロンビア大学大学院に進学できました">
-                    </figure>
+                    <h3 class="p-case-card__title"><?php the_field('case_text_2'); ?></h3>
+                    <?php
+                    $image = get_field('case_img_2');
+                    if (!empty($image)) {
+                        $url = $image['url'];
+                        $alt = $image['alt'];
+                    ?>
+                        <figure class="p-case-card__img">
+                            <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                        </figure>
+                    <?php } ?>
                     <div class="p-case-card__body">
                         <div class="p-case-card__info">
-                            <span class="p-case-card__category">大学生
+                            <span class="p-case-card__category"><?php the_field('case_category_2'); ?>
                             </span>
-                            <span class="p-case-card__name">Y.Takiyamaさん</span>
+                            <span class="p-case-card__name"><?php the_field('case_name_2'); ?></span>
                         </div>
-                        <p class="p-case-card__up">6ヶ月でTOEFL40→100点</p>
+                        <p class="p-case-card__up"><?php the_field('case_up_2'); ?></p>
                     </div>
                 </li>
                 <li class="p-card-list__item p-case-card">
-                    <h3 class="p-case-card__title">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</h3>
-                    <figure class="p-case-card__img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/case03.png" alt="toefl ibt 100点を突破してコロンビア大学大学院に進学できました">
-                    </figure>
+                    <h3 class="p-case-card__title"><?php the_field('case_text_3'); ?></h3>
+                    <?php
+                    $image = get_field('case_img_3');
+                    if (!empty($image)) {
+                        $url = $image['url'];
+                        $alt = $image['alt'];
+                    ?>
+                        <figure class="p-case-card__img">
+                            <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                        </figure>
+                    <?php } ?>
+
+
                     <div class="p-case-card__body">
                         <div class="p-case-card__info">
-                            <span class="p-case-card__category">高校生</span>
-                            <span class="p-case-card__name">M.Yamadaさん</span>
+                            <span class="p-case-card__category"><?php the_field('case_category_3'); ?></span>
+                            <span class="p-case-card__name"><?php the_field('case_name_3'); ?></span>
                         </div>
-                        <p class="p-case-card__up">5ヶ月でTOEFL68→109点</p>
+                        <p class="p-case-card__up"><?php the_field('case_up_3'); ?></p>
                     </div>
                 </li>
             </ul>

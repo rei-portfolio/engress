@@ -244,8 +244,13 @@ form {
 }
 
 label {
-  display: inline-block;
+  display: block;
+  cursor: pointer;
 }
+
+// .mwform-checkbox-field.horizontal-item {
+//   height: 0;
+// }
 
 a,
 area,

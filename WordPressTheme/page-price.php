@@ -7,7 +7,7 @@
         <figure class="p-sub-mv__img">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/price/price-mv.jpg" alt="コース・料金">
         </figure>
-        <h2 class="p-sub-mv__title">コース・料金</h2>
+        <h1 class="p-sub-mv__title">コース・料金</h1>
     </div>
     <!-- ../sub-mv -->
 
@@ -48,7 +48,8 @@
                         </h3>
                         <div class="p-price-list__body">
                             <div class="p-price-list__block">
-                                <p class="p-price-list__price">59,000円~</p>
+                                <!-- acf -->
+                                <p class="p-price-list__price"><?php the_field('price'); ?></p>
                                 <p class="p-price-list__month">*月額（税抜価格）</p>
                             </div>
                             <div class="p-price-list__content">
@@ -65,7 +66,7 @@
                         <div class="p-price-list__body">
 
                             <div class="p-price-list__block">
-                                <p class="p-price-list__price">75,000円~</p>
+                                <p class="p-price-list__price"><?php the_field('price_2'); ?></p>
                                 <p class="p-price-list__month">*月額（税抜価格）</p>
                             </div>
                             <div class="p-price-list__content">
@@ -87,7 +88,7 @@
                         <div class="p-price-list__body">
 
                             <div class="p-price-list__block">
-                                <p class="p-price-list__price p-price-list__price--pickup">95,000円~</p>
+                                <p class="p-price-list__price p-price-list__price--pickup"><?php the_field('price_3'); ?></p>
                                 <p class="p-price-list__month">*月額（税抜価格）</p>
                             </div>
                             <div class="p-price-list__content">
@@ -107,7 +108,7 @@
                         <div class="p-price-list__body">
 
                             <div class="p-price-list__block">
-                                <p class="p-price-list__price">60,000円~</p>
+                                <p class="p-price-list__price"><?php the_field('price_4'); ?></p>
                                 <p class="p-price-list__month">*月額（税抜価格）</p>
                             </div>
                             <div class="p-price-list__content">

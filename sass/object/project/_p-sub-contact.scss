@@ -1,6 +1,4 @@
 .p-sub-contact {
-  padding-bottom: rem(58);
-
 }
 
 .p-sub-contact__inner.l-inner {
@@ -8,8 +6,8 @@
 }
 
 .p-sub-contact__text {
-  @include mq(sp) { 
-     font-size: rem(14);
+  @include mq(sp) {
+    font-size: rem(14);
   }
 }
 
@@ -42,8 +40,8 @@
 }
 
 .p-sub-contact__head {
-  @include mq(sp) { 
-     font-size: rem(14);
+  @include mq(sp) {
+    font-size: rem(14);
   }
 }
 
@@ -51,9 +49,10 @@
   font-size: rem(16);
   line-height: 1;
   letter-spacing: 0.04em;
+  padding-bottom: rem(12);
   margin-right: rem(10);
-  @include mq(sp) { 
-     font-size: rem(14);
+  @include mq(sp) {
+    font-size: rem(14);
   }
 }
 
@@ -79,11 +78,7 @@
   text-decoration: underline;
 }
 
-.p-sub-contact__item {
-  margin-top: rem(12);
-}
-
-.p-sub-contact__item.p-sub-contact__item--check {
+.p-sub-contact__item.p-contact-check {
   margin-top: rem(33);
 }
 

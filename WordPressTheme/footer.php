@@ -1,4 +1,10 @@
-<footer class="p-footer l-footer">
+<footer class="p-footer <?php if (is_page(19)) {
+                            echo 'l-contact-footer';
+                        } else if (is_page(132) || is_404()) {
+                            echo 'l-position-footer';
+                        } else {
+                            echo 'l-footer';
+                        } ?>">
     <div class="p-footer__bgc">
         <div class="p-footer__inner l-inner">
             <ul class="p-footer__items">
