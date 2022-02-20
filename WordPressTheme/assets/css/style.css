@@ -633,6 +633,10 @@ summary {
 	width: 100%;
 }
 
+.l-pagenavi {
+	margin-top: 6.8125rem;
+}
+
 .l-pickup {
 	margin-top: 3.75rem;
 }
@@ -2412,6 +2416,44 @@ input[type="radio"]:checked + span::after {
 
 .u-hidden-tab {
 	display: none;
+}
+
+.wp-pagenavi {
+	align-items: center;
+	clear: both;
+	display: flex;
+	justify-content: center;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	border: 1px solid #1b224c;
+	color: #1b224c;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 0.625rem;
+	padding: 1.0625rem 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.2s ease-in-out;
+	white-space: nowrap;
+}
+
+.wp-pagenavi a:hover {
+	background-color: #1b224c;
+	color: #fff;
+}
+
+.wp-pagenavi span.current {
+	background-color: #1b224c;
+	color: #fff;
+}
+
+.wp-pagenavi span.extend {
+	background: transparent;
+	border: none;
+	margin: 0 1.625rem;
+	padding: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

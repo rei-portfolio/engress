@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- index -->
+  <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
   <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
   <?php wp_head(); ?>
@@ -77,7 +79,7 @@
       <!-- sp-nav -->
       <nav class="p-header__sp-nav p-sp-nav" id="js-sp-nav" aria-hidden="true">
         <ul class="p-sp-nav__items">
-          <li class="p-sp-nav__item"><a href="">ホーム</a></li>
+          <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
           <!-- /.p-sp-nav__item -->
           <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/news/')) ?>">お知らせ</a></li>
           <!-- /.p-sp-nav__item -->

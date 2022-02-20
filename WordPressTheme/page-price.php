@@ -34,8 +34,8 @@
     </section>
     <!-- .../price-plan -->
 
-    <!-- price-table -->
-    <section class="p-price-table l-price-list">
+    <!-- price-list -->
+    <section class="p-price-lost l-price-list">
 
         <div class="p-price-list__inner l-inner">
             <h2 class="p-price-list__title c-sub-section-title">料金表</h2>
@@ -115,15 +115,12 @@
                                 <p class="p-price-list__text p-price-list__text--none">＊別途ご相談ください</p>
                             </div>
                         </div>
-
                     </li>
-
                 </ul>
             </div>
-
         </div>
     </section>
-    <!-- ../price-table -->
+    <!-- ../price-list -->
 
     <!-- contact -->
     <section class="p-contact l-price-contact">

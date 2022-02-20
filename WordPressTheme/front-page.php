@@ -3,12 +3,10 @@
 <!-- url -->
 <?php
 $home = esc_url(home_url('/'));
+$news = esc_url(home_url('/news/'));
+$blog = esc_url(home_url('/blog/'));
 $price = esc_url(home_url('/price/'));
-$works = esc_url(home_url('/works/'));
-$culture = esc_url(home_url('/culture/'));
-$topics = esc_url(home_url('/topics/'));
 $contact = esc_url(home_url('/contact/'));
-
 ?>
 
 <main>
@@ -103,7 +101,7 @@ $contact = esc_url(home_url('/contact/'));
             <div class="p-price__bg">
                 <p class="p-price__text">Engressの料金プランはこちら</p>
                 <div class="p-price__btn">
-                    <a href="" class="c-border__btn">料金を見てみる</a>
+                    <a href="<?php echo $price ?>" class="c-border__btn">料金を見てみる</a>
                 </div>
             </div>
         </div>

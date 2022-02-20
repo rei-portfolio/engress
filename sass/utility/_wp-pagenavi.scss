@@ -1,0 +1,37 @@
+.wp-pagenavi {
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  color: $text-color;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  border: 1px solid $blue-background;
+  padding: rem(17) rem(20);
+  margin: 0 rem(10);
+  white-space: nowrap;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+.wp-pagenavi a:hover {
+  color: $sub-text-color;
+  background-color: $blue-background;
+}
+.wp-pagenavi span.current {
+  color: #fff;
+  background-color: $blue-background;
+}
+
+.wp-pagenavi span.extend {
+  background: transparent;
+  margin: 0 rem(26);
+  padding: 0;
+  border: none;
+}

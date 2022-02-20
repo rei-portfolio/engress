@@ -75,6 +75,9 @@
                 <?php endif; ?>
 
             </ul>
+            <div class="l-pagenavi">
+                <?php wp_pagenavi(); ?>
+            </div>
         </div>
 
     </section>
