@@ -38,7 +38,8 @@
 }
 
 .p-mv__link {
-  display: inline-block;
+  display: block;
+  width: 100%;
   margin-top: rem(22);
   color: $sub-text-color;
   text-decoration: underline;

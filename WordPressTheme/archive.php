@@ -58,7 +58,7 @@
                                         ?>
                                     </a>
                                 </h3>
-                                <p class="p-blog-box__text"><?php the_excerpt(); ?></p>
+                                <div class="p-blog-box__text"><?php the_excerpt(); ?></div>
                             </div>
                         </li>
 

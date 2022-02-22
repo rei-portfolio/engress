@@ -18,6 +18,7 @@
 
 .p-contact__link {
   display: inline-block;
+  width: 100%;
   margin-top: rem(22);
   color: $sub-text-color;
   text-decoration: underline;
@@ -27,6 +28,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
   margin-top: rem(20);
   margin-left: rem(-115);
   @include mq(sp) { 

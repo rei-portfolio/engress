@@ -1,15 +1,14 @@
 .c-small-btn {
-  display: block;
+  display: inline-block;
   color: $sub-text-color;
+  font-size: rem(14);
   border-radius: 5px;
   font-weight: $font-weight-bold;
+  background-color: $ac-color;
+  padding: rem(13) rem(43);
 }
 
-.c-small-btn.c-small-btn--document {
-  background-color: $ac-color;
-  padding: rem(14.5) rem(38);
-}
-.c-small-btn.c-small-btn--contact {
+.c-small-btn.c-small-btn--blue {
   background-color: $blue-background;
-  padding: rem(15) rem(30);
+  padding: rem(13) rem(29);
 }

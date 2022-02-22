@@ -59,7 +59,8 @@
 }
 
 .p-blog-box__sub-title a {
-  display: inline-block;
+  display: block;
+  width: 100%;
   font-size: rem(26);
   line-height: 1.5;
   font-weight: $font-weight-bold;
@@ -72,6 +73,7 @@
 
 .p-blog-box__text {
   margin-top: rem(15);
+  line-height: 1.5;
 }
 
 .p-blog-box__date {

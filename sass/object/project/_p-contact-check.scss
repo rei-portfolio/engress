@@ -5,6 +5,7 @@
 input[type="checkbox"] + span {
   cursor: pointer;
   font-size: rem(16);
+  font-weight: $font-weight-base;
   display: inline-block;
   padding: 0 0 0 rem(35);
   position: relative;

@@ -8,8 +8,8 @@
 }
 
 .p-box1:nth-child(even) {
-  @include mq(sp) { 
-     flex-direction: column-reverse;
+  @include mq(sp) {
+    flex-direction: column-reverse;
   }
 }
 
@@ -34,11 +34,11 @@
   font-size: rem(12);
   background-color: $ac-color;
   padding: rem(9) rem(25);
-  @include mq(sp) { 
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: 5;
+  @include mq(sp) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
   }
 }
 
@@ -46,16 +46,17 @@
   font-size: rem(26);
   font-weight: $font-weight-bold;
   margin-top: rem(35);
-  @include mq(sp) { 
-     font-size: rem(20);
-     margin-top: rem(24);
+  line-height: 1.5;
+  @include mq(sp) {
+    font-size: rem(20);
+    margin-top: rem(24);
   }
 }
 
 .p-box1__text {
   margin-top: rem(39);
-  @include mq(sp) { 
-     margin-top: rem(20);
+  @include mq(sp) {
+    margin-top: rem(20);
   }
 }
 
@@ -63,8 +64,8 @@
   width: 100%;
   position: relative;
   margin-left: rem(50);
-  @include mq(sp) { 
-     margin-left: 0;
+  @include mq(sp) {
+    margin-left: 0;
   }
 }
 

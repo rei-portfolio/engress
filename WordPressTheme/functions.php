@@ -157,3 +157,5 @@ function wpSns() {
 }
 add_shortcode('socialBtns', 'wpSns');
 
+// 自動挿入されるpやbrタグを削除
+remove_filter('the_content', 'wpautop');

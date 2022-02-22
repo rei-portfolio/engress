@@ -39,15 +39,10 @@
         <nav class="p-header-pc-nav p-pc-nav">
           <ul class="p-pc-nav__items">
             <li class="p-pc-nav__item"><a href="<?php echo esc_url(home_url('/')) ?>">ホーム</a></li>
-            <!-- /.p-pc-nav__item -->
             <li class="p-pc-nav__item"><a href="<?php echo esc_url(home_url('/news/')) ?>">お知らせ</a></li>
-            <!-- /.p-pc-nav__item -->
             <li class="p-pc-nav__item"><a href="<?php echo esc_url(home_url('/blog/')) ?>">ブログ</a></li>
-            <!-- /.p-pc-nav__item -->
             <li class="p-pc-nav__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
-            <!-- /.p-pc-nav__item -->
           </ul>
-          <!-- /.p-pc-nav__items -->
         </nav>
         <!-- /.p-pc-nav -->
       </div>
@@ -64,10 +59,10 @@
         </div>
 
         <div class="p-header__btn">
-          <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn c-small-btn--document">資料請求</a>
+          <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn">資料請求</a>
         </div>
         <div class="p-header__btn">
-          <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn c-small-btn--contact">お問い合わせ</a>
+          <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn c-small-btn--blue">お問い合わせ</a>
         </div>
       </div>
 
@@ -77,21 +72,29 @@
       </button>
 
       <!-- sp-nav -->
-      <nav class="p-header__sp-nav p-sp-nav" id="js-sp-nav" aria-hidden="true">
-        <ul class="p-sp-nav__items">
-          <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
-          <!-- /.p-sp-nav__item -->
-          <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/news/')) ?>">お知らせ</a></li>
-          <!-- /.p-sp-nav__item -->
-          <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/blog/')) ?>">ブログ</a></li>
-          <!-- /.p-sp-nav__item -->
-          <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
-          <!-- /.p-sp-nav__item -->
-        </ul>
-      </nav>
-      <!-- //.sp-nav -->
-    </div>
+      <div class="p-header__sp-nav p-sp-nav" id="js-sp-nav" aria-hidden="true">
+        <nav>
+          <ul class="p-sp-nav__items">
+            <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+            <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/news/')) ?>">お知らせ</a></li>
+            <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/blog/')) ?>">ブログ</a></li>
+            <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
+          </ul>
+        </nav>
 
+        <div class="p-sp-nav__contact">
+          <div class="p-sp-nav__btn">
+            <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn">資料請求</a>
+          </div>
+          <div class="p-sp-nav__btn">
+            <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn c-small-btn--blue">お問い合わせ</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- //.sp-nav -->
+
+    </div>
     <!-- /.p-header__inner -->
   </header>
   <!-- ../header -->

@@ -1,0 +1,15 @@
+.p-404 {
+  @include mq(sp) {
+    padding-bottom: rem(100);
+  }
+}
+
+.p-404__title.c-section-title {
+  @include mq(sp) {
+    font-size: rem(18);
+  }
+}
+
+.p-404__text {
+  margin-top: rem(50);
+}

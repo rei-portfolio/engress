@@ -1,5 +1,4 @@
-.p-sub-contact {
-}
+
 
 .p-sub-contact__inner.l-inner {
   max-width: 700px + strip-unit($padding-pc) * 2;
@@ -58,7 +57,7 @@
 
 .p-sub-contact__bold {
   font-weight: $font-weight-bold;
-  @include mq(sp) {
+  @include mq(tab) {
     display: block;
     margin-top: rem(8);
     font-size: rem(14);

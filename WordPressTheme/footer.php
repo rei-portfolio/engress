@@ -8,14 +8,10 @@
     <div class="p-footer__bgc">
         <div class="p-footer__inner l-inner">
             <ul class="p-footer__items">
-                <div class="p-footer__list">
-                    <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
-                    <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/news/')); ?>">お知らせ</a></li>
-                </div>
-                <div class="p-footer__list">
-                    <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/blog/')); ?>">ブログ</a></li>
-                    <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
-                </div>
+                <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/news/')); ?>">お知らせ</a></li>
+                <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/blog/')); ?>">ブログ</a></li>
+                <li class="p-footer__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
             </ul>
 
             <div class="p-footer__block">

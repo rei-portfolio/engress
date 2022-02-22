@@ -19,6 +19,10 @@
   transition: 0.2s ease-in-out;
   text-align: center;
   text-decoration: none;
+  @include mq(sp) { 
+  padding: rem(10) rem(13);
+  margin: 0 rem(8);
+  }
 }
 .wp-pagenavi a:hover {
   color: $sub-text-color;
@@ -34,4 +38,7 @@
   margin: 0 rem(26);
   padding: 0;
   border: none;
+  @include mq(sp) { 
+     margin: 0 rem(24);
+  }
 }

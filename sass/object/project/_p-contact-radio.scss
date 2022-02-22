@@ -13,8 +13,9 @@ input[type="radio"] + span {
   // margin: 0 0.2em 0;
   padding: rem(9) 0 rem(9) rem(39);
   position: relative;
-  @include mq(sp) { 
-     font-size: rem(14);
+  font-weight: $font-weight-base;
+  @include mq(sp) {
+    font-size: rem(14);
   }
 }
 

@@ -3,4 +3,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    @include mq(sp) { 
+       position: initial;
+    }
 }

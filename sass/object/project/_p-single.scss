@@ -1,3 +1,7 @@
+.p-single {
+  line-height: 1.5;
+}
+
 .p-single__category {
   display: inline-block;
   color: $sub-text-color;
@@ -20,7 +24,6 @@
 .p-single__title {
   font-size: rem(28);
   font-weight: $font-weight-bold;
-  line-height: 1.5;
   margin-top: rem(35);
   @include mq(sp) { 
      margin-top: rem(24);
@@ -72,7 +75,6 @@
 }
 
 .p-single__body > p {
-  line-height: 1.5;
   margin-top: rem(30);
   @include mq(sp) {
     margin-top: rem(24);
@@ -136,7 +138,6 @@
 }
 
 .p-single__body ul {
-  line-height: 1.5;
   width: 100%;
   max-width: rem(558);
   margin-top: rem(30);
@@ -163,9 +164,10 @@
 }
 
 .p-single__body a {
+  display: block;
   color: $ac-color;
+  font-size: rem(18);
   text-decoration: underline;
-  line-height: 1.5;
   margin-top: rem(30);
   @include mq(sp) { 
      margin-top: rem(24);

@@ -7,25 +7,53 @@
     transform: translateX(100%);
     transition: 0.3s ease;
     overflow: hidden;
+
+    height: 100vh;
+    overflow: scroll;
   }
 }
 
+.p-sp-nav__contact {
+  display: none;
+  @include mq(sp) { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: rem(208);
+  }
+}
+
+.p-sp-nav__btn:last-child {
+  margin-top: rem(20);
+}
+
 .p-sp-nav__items {
-  padding: rem(200) 0 rem(208);
-  //   marginでheaderに刺さらないようにする
-  margin-top: rem(50);
-  height: 100vh;
-  overflow: scroll;
+  @include mq(tab) { 
+    // padding: rem(200) 0 rem(208);
+    padding: rem(200) 0 rem(20);
+    //   marginでheaderに刺さらないようにする
+    margin-top: rem(50);
+  }
+  @include mq(sp) { 
+    padding: rem(150) 0 rem(20);
+     
+  }
 }
 .p-sp-nav__item a {
   display: block;
+  font-size: rem(18);
   width: 100%;
-  padding-top: rem(16);
-  padding-bottom: rem(16);
+  padding-top: rem(20);
+  padding-bottom: rem(20);
   text-align: center;
   color: $text-color;
-  font-size: rem(16);
   font-weight: $font-weight-bold;
+  @include mq(sp) {
+    font-size: rem(16);
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+  }
 }
 
 .is-drawerActive {

@@ -1,5 +1,8 @@
 .p-thanks {
   text-align: center;
+  @include mq(sp) {
+    padding-bottom: rem(100);
+  }
 }
 
 .p-thanks__text {
