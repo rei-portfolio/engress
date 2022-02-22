@@ -80,9 +80,9 @@
                     </li>
                     <li class="p-price-list__item">
                         <h3 class="p-price-list__sub-title p-price-list__sub-title--pickup">
-                            <spn class="p-price-list__br">
+                            <span class="p-price-list__br">
                                 おすすめ
-                            </spn>
+                            </span>
                             志望校対策プラン
                         </h3>
                         <div class="p-price-list__body">

@@ -21,7 +21,7 @@
   text-decoration: none;
   @include mq(sp) { 
   padding: rem(10) rem(13);
-  margin: 0 rem(8);
+  margin: 0 rem(6);
   }
 }
 .wp-pagenavi a:hover {
@@ -39,6 +39,6 @@
   padding: 0;
   border: none;
   @include mq(sp) { 
-     margin: 0 rem(24);
+     margin: 0 rem(6);
   }
 }

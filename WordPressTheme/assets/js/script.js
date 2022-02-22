@@ -46,6 +46,9 @@ jQuery(function ($) {
       });
     }
 
+    // WP Social Bookmarking Lightのidを削除
+    // $('div').removeClass('fb-root');
+
     /* スムーススクロール */
     jQuery('a[href^="#"]').click(function () {
       let header = jQuery(".js-header").height();

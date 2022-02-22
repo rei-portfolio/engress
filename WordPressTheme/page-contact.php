@@ -22,7 +22,7 @@
     <!-- ../パンくず -->
 
     <!-- contact -->
-    <section class="l-sub-contact p-sub-contact">
+    <div class="l-sub-contact p-sub-contact">
         <div class="p-sub-contact__inner l-inner">
             <div class="p-sub-contact__textBox">
                 <p class="p-sub-contact__text">
@@ -40,7 +40,7 @@
             <?php endif; ?>
 
         </div>
-    </section>
+    </div>
     <!-- contact -->
 </main>
 
