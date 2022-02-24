@@ -10,34 +10,38 @@
 }
 
 .p-border-box__title {
-  @include mq(sp) { 
+  @include mq(sp) {
     font-size: rem(19);
   }
 }
 
 .p-border-box__under {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .p-border-box__under::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -10;
-    bottom: rem(3);
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: rem(5);
-    background-color: $ac-color;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -10;
+  bottom: rem(8);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: rem(8);
+  background-color: $ac-color;
+  @include mq(sp) {
+    bottom: rem(4);
+    height: rem(4);
+  }
 }
 
 .p-border-box__text {
-    font-size: rem(18);
-    line-height: 1.722;
-    margin-top: rem(25);
-    @include mq(sp) { 
-      font-size: rem(16);
-    }
+  font-size: rem(18);
+  line-height: 1.722;
+  margin-top: rem(25);
+  @include mq(sp) {
+    font-size: rem(16);
+  }
 }

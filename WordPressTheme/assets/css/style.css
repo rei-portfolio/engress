@@ -1096,10 +1096,10 @@ summary {
 
 .p-border-box__under::after {
 	background-color: #f5a623;
-	bottom: 0.1875rem;
+	bottom: 0.5rem;
 	content: "";
 	display: block;
-	height: 0.3125rem;
+	height: 0.5rem;
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -1262,6 +1262,7 @@ summary {
 }
 
 .p-category__item a {
+	display: block;
 	font-size: 1rem;
 	font-weight: 700;
 	padding: 0.5rem 0;
@@ -2742,6 +2743,11 @@ a:hover {
 
 .p-border-box__title {
 	font-size: 1.1875rem;
+}
+
+.p-border-box__under::after {
+	bottom: 0.25rem;
+	height: 0.25rem;
 }
 
 .p-border-box__text {
