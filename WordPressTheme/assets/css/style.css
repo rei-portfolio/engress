@@ -2746,7 +2746,7 @@ a:hover {
 }
 
 .p-border-box__under::after {
-	bottom: 0.25rem;
+	bottom: 0.0625rem;
 	height: 0.25rem;
 }
 

@@ -32,7 +32,7 @@
   height: rem(8);
   background-color: $ac-color;
   @include mq(sp) {
-    bottom: rem(4);
+    bottom: rem(1);
     height: rem(4);
   }
 }
