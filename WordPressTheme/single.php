@@ -75,28 +75,28 @@
                         if ($tag_posts) : foreach ($tag_posts as $post) : setup_postdata($post); ?>
 
                                 <li class="p-pickup__item">
-                                    <?php if (has_post_thumbnail()) : ?>
-                                        <figure class="p-pickup__img">
-                                            <?php the_post_thumbnail(); ?>
-                                        </figure>
-                                    <?php else : ?>
-                                        <figure class="p-pickup__img">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/no-img.png" alt="" />
-                                        </figure>
-                                    <?php endif; ?>
-                                    <div class="p-pickup__body">
-                                        <div class="p-pickup__category">
-                                            <!-- カテゴリー -->
-                                            <?php
-                                            $category = get_the_category();
-                                            if ($category[0]) {
-                                                echo '<a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->name . '</a>';
-                                            }
-                                            ?>
-                                        </div>
-                                        <time datetime="<?php the_time('c'); ?>" class="p-pickup__date"><?php the_time('Y-m-d'); ?></time>
-                                        <h3 class="p-pickup__sub-title">
-                                            <a href="<?php the_permalink(); ?>">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php if (has_post_thumbnail()) : ?>
+                                            <figure class="p-pickup__img">
+                                                <?php the_post_thumbnail(); ?>
+                                            </figure>
+                                        <?php else : ?>
+                                            <figure class="p-pickup__img">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/no-img.png" alt="" />
+                                            </figure>
+                                        <?php endif; ?>
+                                        <div class="p-pickup__body">
+                                            <div class="p-pickup__category">
+                                                <!-- カテゴリー -->
+                                                <?php
+                                                $category = get_the_category();
+                                                if ($category[0]) {
+                                                    echo $category[0]->name;
+                                                }
+                                                ?>
+                                            </div>
+                                            <time datetime="<?php the_time('c'); ?>" class="p-pickup__date"><?php the_time('Y-m-d'); ?></time>
+                                            <h3 class="p-pickup__sub-title">
                                                 <!-- 文字数制限 -->
                                                 <?php
                                                 if (mb_strlen($post->post_title, 'UTF-8') > 50) {
@@ -106,9 +106,9 @@
                                                     echo $post->post_title;
                                                 }
                                                 ?>
-                                            </a>
-                                        </h3>
-                                    </div>
+                                            </h3>
+                                        </div>
+                                    </a>
                                 </li>
 
                         <?php endforeach;

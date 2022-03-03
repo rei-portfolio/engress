@@ -1,16 +1,16 @@
 .p-success {
-    background-color: $blue-background;
-    padding-top: rem(58);
-    padding-bottom: rem(60);
+  background-color: $blue-background;
+  padding-top: rem(58);
+  padding-bottom: rem(60);
 }
 
 .p-success__title {
-    color: $sub-text-color;
+  color: $sub-text-color;
 }
 
 .p-success__items {
-    margin-top: rem(137);
-    @include mq(sp) { 
-       margin-top: rem(48);
-    }
+  margin-top: rem(60);
+  @include mq(sp) {
+    margin-top: rem(48);
+  }
 }
