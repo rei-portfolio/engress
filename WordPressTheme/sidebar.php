@@ -32,25 +32,25 @@
             ?>
 
                     <li class="p-relate__item">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <figure class="p-relate__img">
-                                <?php the_post_thumbnail(); ?>
-                            </figure>
-                        <?php else : ?>
-                            <figure class="p-relate__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/no-img.png" alt="" />
-                            </figure>
-                        <?php endif; ?>
-                        <h3 class="p-relate__sub-title">
-                            <a href="<?php the_permalink(); ?>">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <figure class="p-relate__img">
+                                    <?php the_post_thumbnail(); ?>
+                                </figure>
+                            <?php else : ?>
+                                <figure class="p-relate__img">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/no-img.png" alt="" />
+                                </figure>
+                            <?php endif; ?>
+                            <h3 class="p-relate__sub-title">
                                 <? if (mb_strlen($post->post_title, 'UTF-8') > 40) {
                                     $title = mb_substr($post->post_title, 0, 40, 'UTF-8');
                                     echo $title . '……';
                                 } else {
                                     echo $post->post_title;
                                 } ?>
-                            </a>
-                        </h3>
+                            </h3>
+                        </a>
                     </li>
 
             <?php endwhile;

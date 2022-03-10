@@ -1,14 +1,36 @@
+.p-blog__item {
+  margin-top: rem(30);
+}
+
 .p-blog__item a {
   position: relative;
   display: flex;
   justify-content: flex-start;
-  margin-top: rem(30);
+}
+
+.p-blog__item a:hover {
+  opacity: 1;
+  .p-blog__img img {
+    transform: scale(1.2, 1.2);
+    @include mq(sp) {
+      transform: initial;
+    }
+  }
+  .p-blog__body {
+    opacity: $opacity;
+    @include mq(sp) {
+      opacity: 1;
+    }
+  }
 }
 
 .p-blog__img {
   width: 100%;
   position: relative;
   max-width: rem(150);
+  // アニメーション用
+  overflow: hidden;
+  transition: inherit;
 }
 .p-blog__img::before {
   content: "";
@@ -23,6 +45,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
+  transition: inherit;
 }
 
 .p-blog__body {
@@ -31,6 +54,7 @@
   flex-direction: column;
   width: 100%;
   max-width: rem(260);
+  transition: all 0.3s ease-in-out;
 }
 
 .p-blog__category {

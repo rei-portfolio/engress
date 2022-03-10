@@ -35,6 +35,12 @@
     <div class="p-footer__copy c-copy l-inner">&copy; 2020 Engress.</div>
 
 </footer>
+
+<?php if (is_page(132) || is_404()) : ?>
+    </div>
+    <!-- position-contents -->
+<?php endif; ?>
+
 <?php wp_footer(); ?>
 </body>
 

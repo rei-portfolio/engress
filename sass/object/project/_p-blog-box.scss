@@ -7,10 +7,29 @@
   }
 }
 
+.p-blog-box a:hover {
+  opacity: 1;
+  .p-blog-box__img img {
+    transform: scale(1.2, 1.2);
+    @include mq(sp) {
+      transform: initial;
+    }
+  }
+  .p-blog-box__body {
+    opacity: $opacity;
+    @include mq(sp) {
+      opacity: 1;
+    }
+  }
+}
+
 .p-blog-box__img {
   width: 100%;
   position: relative;
   max-width: rem(240);
+  // アニメーション用
+  overflow: hidden;
+  transition: inherit;
   @include mq(sp) {
     max-width: 100%;
   }
@@ -28,12 +47,14 @@
   bottom: 0;
   width: 100%;
   height: 100%;
+  transition: inherit;
 }
 
 .p-blog-box__body {
   width: 100%;
   max-width: rem(610);
   padding-left: rem(50);
+  transition: all 0.3s ease-in-out;
   @include mq(sp) {
     padding-left: 0;
     padding-top: rem(24);
