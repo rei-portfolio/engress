@@ -1,8 +1,6 @@
 .p-header {
   position: relative;
-  @include mq(sp) {
-    background-color: $background;
-  }
+  background-color: $background;
 }
 
 .p-header__inner {

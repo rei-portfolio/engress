@@ -43,12 +43,8 @@
                                 </figure>
                             <?php endif; ?>
                             <h3 class="p-relate__sub-title">
-                                <? if (mb_strlen($post->post_title, 'UTF-8') > 40) {
-                                    $title = mb_substr($post->post_title, 0, 40, 'UTF-8');
-                                    echo $title . '……';
-                                } else {
-                                    echo $post->post_title;
-                                } ?>
+                                <!-- 文字数制限 -->
+                                <?php show_limit_title(40); ?>
                             </h3>
                         </a>
                     </li>

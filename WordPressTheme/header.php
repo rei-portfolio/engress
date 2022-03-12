@@ -23,7 +23,6 @@
 
     <!-- header -->
     <header class="l-header p-header">
-
       <div class="p-header__inner">
         <div class="p-header__left">
           <!-- トップと下層でタグ変更 -->

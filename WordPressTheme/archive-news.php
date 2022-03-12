@@ -24,7 +24,7 @@
     <!-- news -->
     <section class="p-sub-news l-sub-news">
         <div class="p-sub-news__inner l-inner">
-            <h2 class="p-sub-news__title c-sub-section-title">お知らせ一覧</h2>
+            <h2 class="p-sub-news__title c-sub-section-title"><?php the_archive_title() ?></h2>
             <ul class="p-sub-news__items">
 
                 <?php if (have_posts()) : ?>
@@ -35,14 +35,7 @@
                             <h3 class="p-news-info__sub-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <!-- 文字数制限 -->
-                                    <?php
-                                    if (mb_strlen($post->post_title, 'UTF-8') > 42) {
-                                        $title = mb_substr($post->post_title, 0, 42, 'UTF-8');
-                                        echo $title . '……';
-                                    } else {
-                                        echo $post->post_title;
-                                    }
-                                    ?>
+                                     <?php show_limit_title(42); ?>
                                 </a>
                             </h3>
                         </li>

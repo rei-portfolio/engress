@@ -25,7 +25,7 @@
     <section class="p-sub-blog l-sub-blog">
         <div class="p-sub-blog__inner l-inner">
             <!-- ページタイトル -->
-            <h2 class="p-sub-blog__title c-sub-section-title"><?php wp_title(''); ?>一覧</h2>
+            <h2 class="p-sub-blog__title c-sub-section-title"><?php the_archive_title(''); ?></h2>
             <ul class="p-sub-blog__items">
 
                 <?php if (have_posts()) : ?>
@@ -47,14 +47,7 @@
                                     <time datetime="<?php the_time('c'); ?>" class="p-blog-box__date"><?php the_time('Y-m-d'); ?></time>
                                     <h3 class="p-blog-box__sub-title">
                                         <!-- 文字数制限 -->
-                                        <?php
-                                        if (mb_strlen($post->post_title, 'UTF-8') > 50) {
-                                            $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
-                                            echo $title . '……';
-                                        } else {
-                                            echo $post->post_title;
-                                        }
-                                        ?>
+                                        <?php show_limit_title(); ?>
                                     </h3>
                                     <div class="p-blog-box__text"><?php the_excerpt(); ?></div>
                                 </div>

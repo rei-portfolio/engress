@@ -98,14 +98,7 @@
                                             <time datetime="<?php the_time('c'); ?>" class="p-pickup__date"><?php the_time('Y-m-d'); ?></time>
                                             <h3 class="p-pickup__sub-title">
                                                 <!-- 文字数制限 -->
-                                                <?php
-                                                if (mb_strlen($post->post_title, 'UTF-8') > 50) {
-                                                    $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
-                                                    echo $title . '……';
-                                                } else {
-                                                    echo $post->post_title;
-                                                }
-                                                ?>
+                                                <?php show_limit_title(); ?>
                                             </h3>
                                         </div>
                                     </a>

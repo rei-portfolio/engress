@@ -97,11 +97,11 @@ function my_archive_title($title) {
 	if (is_home()) { /* ホームの場合 */
 		$title = 'ブログ';
 	} elseif (is_category()) { /* カテゴリーアーカイブの場合 */
-		$title = '' . single_cat_title('', false) . '';
+		$title = '' . single_cat_title('', false) . '一覧';
 	} elseif (is_tag()) { /* タグアーカイブの場合 */
-		$title = '' . single_tag_title('', false) . '';
+		$title = '' . single_tag_title('', false) . '一覧';
 	} elseif (is_post_type_archive()) { /* 投稿タイプのアーカイブの場合 */
-		$title = '' . post_type_archive_title('', false) . '';
+		$title = '' . post_type_archive_title('', false) . '一覧';
 	} elseif (is_tax()) { /* タームアーカイブの場合 */
 		$title = '' . single_term_title('', false);
 	} elseif (is_search()) { /* 検索結果アーカイブの場合 */
@@ -147,6 +147,22 @@ function my_excerpt_more($more) {
 	return '...';
 }
 add_filter('excerpt_more', 'my_excerpt_more');
+
+
+// タイトルの文字数制限
+function show_limit_title($limit = 50) {
+	global $post;
+	$title = $post->post_title;
+	
+	if( mb_strlen( $title ) > $limit) {
+	  $title= mb_substr( $title , 0 , $limit ) ;
+	  $show_title = $title. '……' ;
+	} else {
+	  $show_title = $title;
+	}
+   
+	echo $show_title;
+  }
 
 
 // WP Social Bookmarking Light

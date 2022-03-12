@@ -12,15 +12,19 @@ $contact = esc_url(home_url('/contact/'));
 <main>
     <!-- mv -->
     <section class="p-mv">
-        <h2 class="p-mv__title">
-            TOEFL対策はEngress</h2>
-        <p class="p-mv__text">
-            日本人へのTOEFL指導歴豊かな講師陣の<br />コーチング型TOEFLスクール
-        </p>
-        <div class="p-mv__btn">
-            <a href="<?php echo $contact ?>" class="c-main-btn">資料請求</a>
+        <figure class="p-mv__img">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/mv.jpg" alt="toefl対策はエンぐレス">
+        </figure>
+        <div class="p-mv__content">
+            <h2 class="p-mv__title">TOEFL対策はEngress</h2>
+            <p class="p-mv__text">
+                日本人へのTOEFL指導歴豊かな講師陣の<br />コーチング型TOEFLスクール
+            </p>
+            <div class="p-mv__btn">
+                <a href="<?php echo $contact ?>" class="c-main-btn">資料請求</a>
+            </div>
+            <a href="<?php echo $contact ?>" class="p-mv__link">お問い合わせ</a>
         </div>
-        <a href="<?php echo $contact ?>" class="p-mv__link">お問い合わせ</a>
     </section>
     <!-- ../mv -->
 
@@ -310,14 +314,7 @@ $contact = esc_url(home_url('/contact/'));
                                         </div>
                                         <h3 class="p-blog__sub-title">
                                             <!-- 文字数制限 -->
-                                            <?php
-                                            if (mb_strlen($post->post_title, 'UTF-8') > 50) {
-                                                $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
-                                                echo $title . '……';
-                                            } else {
-                                                echo $post->post_title;
-                                            }
-                                            ?>
+                                            <?php show_limit_title(); ?>
                                         </h3>
 
                                         <time datetime="<?php the_time('c'); ?>" class="p-blog__date"><?php the_time('Y-m-d'); ?></time>
@@ -354,14 +351,7 @@ $contact = esc_url(home_url('/contact/'));
                                 <h3 class="p-news__sub-title">
                                     <a href="<?php the_permalink(); ?>">
                                         <!-- 文字数制限 -->
-                                        <?php
-                                        if (mb_strlen($post->post_title, 'UTF-8') > 50) {
-                                            $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
-                                            echo $title . '……';
-                                        } else {
-                                            echo $post->post_title;
-                                        }
-                                        ?>
+                                        <?php show_limit_title(); ?>
                                     </a>
                                 </h3>
                             </li>

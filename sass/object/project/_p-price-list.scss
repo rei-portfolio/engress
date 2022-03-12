@@ -1,12 +1,3 @@
-.p-price-list {
-}
-
-.p-price-list__inner.l-inner {
-  // @include mq(sp) {
-  //   max-width: initial;
-  // }
-}
-
 .p-price-list__scroll {
   @include mq(sp) {
     overflow-x: auto;
@@ -14,106 +5,10 @@
 }
 
 .p-price-list__items {
-  display: flex;
   margin-top: rem(112);
   @include mq(sp) {
+    margin-top: rem(80);
+    // 横スクロールするため
     width: rem(850);
-    font-size: rem(15);
-    @include mq(sp) {
-      margin-top: rem(80);
-    }
   }
-}
-
-.p-price-list__item {
-  text-align: center;
-  max-width: calc(25% - #{rem(7)} * 3 / 4);
-  width: 100%;
-  @include mq(sp) {
-  }
-}
-
-.p-price-list__item + .p-price-list__item {
-  margin-left: rem(7);
-}
-
-.p-price-list__sub-title {
-  color: $sub-text-color;
-  font-size: rem(16);
-  font-weight: $font-weight-bold;
-  background-color: $blue-background;
-  padding-top: rem(21);
-  padding-bottom: rem(21);
-}
-
-.p-price-list__body {
-  border: 0.5px solid $blue-background;
-  border-top: none;
-  height: 100%;
-  padding-top: rem(30);
-  padding-bottom: rem(94);
-  @include mq(sp) {
-    height: 87%;
-  }
-}
-
-.p-price-list__sub-title.p-price-list__sub-title--pickup {
-  background-color: $ac-color;
-  margin-top: rem(-42);
-}
-
-.p-price-list__br {
-  display: block;
-  padding-bottom: rem(15);
-}
-
-.p-price-list__block {
-}
-
-.p-price-list__price {
-  font-size: rem(25);
-  font-weight: $font-weight-bold;
-}
-
-.p-price-list__price.p-price-list__price--pickup {
-  color: $ac-color;
-}
-
-.p-price-list__month {
-  margin-top: rem(14);
-}
-
-.p-price-list__content {
-  margin-top: rem(49);
-  max-width: rem(185);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// .p-price-list__text {
-//     position: relative;
-// }
-
-.p-price-list__text::before {
-  content: "";
-  display: inline-block;
-  //   position: absolute;
-  //   top: rem(0.5);
-  //   left: 0;
-  margin-right: rem(11.5);
-  margin-bottom: rem(4);
-  width: rem(9.8);
-  height: rem(6.5);
-  border-left: 3px solid $blue-background;
-  border-bottom: 3px solid $blue-background;
-  transform: rotate(-45deg);
-}
-
-.p-price-list__text.p-price-list__text--none::before {
-  content: none;
-}
-
-.p-price-list__text + .p-price-list__text {
-  margin-top: rem(20);
 }

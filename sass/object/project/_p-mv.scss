@@ -1,25 +1,37 @@
 .p-mv {
-  background-image: url(../img/top/mv.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: rem(476);
+}
+
+.p-mv__img,
+.p-mv__img img {
+  width: inherit;
+  height: inherit;
+}
+
+.p-mv__img img {
+  @include mq(sp) {
+    object-position: 70% center;
+  }
+}
+
+.p-mv__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: $sub-text-color;
   text-align: center;
-  padding-top: rem(116);
-  padding-bottom: rem(86);
-  // padding-top: calc(116 / 1280 * 100vw);
-  // padding-bottom: calc(86 / 1280 * 100vw);
-  @include mq(sp) { 
-    background-position: 70% center
-  }
+  width: 100%;
 }
 
 .p-mv__title {
   font-size: rem(48);
   font-weight: $font-weight-bold;
   line-height: 1;
-  @include mq(sp) { 
-     font-size: rem(28);
+  @include mq(sp) {
+    font-size: rem(28);
   }
 }
 
@@ -27,9 +39,9 @@
   font-size: rem(18);
   margin-top: rem(25);
   line-height: 1.72;
-  @include mq(sp) { 
-     padding-left: $padding-sp;
-     padding-right: $padding-sp;
+  @include mq(sp) {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
   }
 }
 
