@@ -1,6 +1,6 @@
 .l-pagenavi {
-    margin-top: rem(109);
-    @include mq(sp) { 
-       margin-top: rem(80);
-    }
+  margin-top: rem(109);
+  @include mq(sp) {
+    margin-top: rem(80);
+  }
 }

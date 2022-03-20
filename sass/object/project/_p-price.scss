@@ -1,7 +1,7 @@
 .p-price__inner.l-inner {
-  @include mq(sp) { 
-     max-width: 100%;
-     padding: 0;
+  @include mq(sp) {
+    max-width: 100%;
+    padding: 0;
   }
 }
 
@@ -14,17 +14,17 @@
   padding-top: rem(61);
   padding-bottom: rem(53);
   color: $sub-text-color;
-  @include mq(sp) { 
-     padding-left: $padding-sp;
-     padding-right: $padding-sp;
+  @include mq(sp) {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
   }
 }
 
 .p-price__text {
   font-size: rem(26);
   font-weight: $font-weight-bold;
-  @include mq(sp) { 
-     font-size: rem(23);
+  @include mq(sp) {
+    font-size: rem(23);
   }
 }
 

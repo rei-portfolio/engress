@@ -3,14 +3,10 @@
   flex-direction: column;
 }
 
-// .p-contact-radio__item {
-// 	display: none;
-// }
-
+// クラスではうまく反映されないためタグで実装
 input[type="radio"] + span {
   cursor: pointer;
   display: inline-block;
-  // margin: 0 0.2em 0;
   padding: rem(9) 0 rem(9) rem(39);
   position: relative;
   font-weight: $font-weight-base;

@@ -6,9 +6,9 @@
   align-items: center;
   justify-content: center;
   margin-top: rem(60);
-  @include mq(sp) { 
-     font-size: rem(16);
-     text-align: center;
+  @include mq(sp) {
+    font-size: rem(16);
+    text-align: center;
   }
 }
 .p-price-plan__join {
@@ -17,7 +17,6 @@
   padding: rem(34) rem(58);
   @include mq(sp) {
     line-height: 1.5;
-
     padding: rem(4) rem(34);
   }
 }
@@ -34,23 +33,23 @@
 }
 .p-price-plan__month::before,
 .p-price-plan__month::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: rem(48.5);
-    left: rem(-60);
-    width: rem(27);
-    height: rem(2);
-    background-color: $blue-background;
-    @include mq(sp) { 
-       width: rem(18);
-       top: rem(30);
-       left: rem(-35);
-    }
+  content: "";
+  display: block;
+  position: absolute;
+  top: rem(48.5);
+  left: rem(-60);
+  width: rem(27);
+  height: rem(2);
+  background-color: $blue-background;
+  @include mq(sp) {
+    width: rem(18);
+    top: rem(30);
+    left: rem(-35);
+  }
 }
 
 .p-price-plan__month::before {
-    transform:rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .p-price-plan__text {

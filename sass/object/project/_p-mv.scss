@@ -4,6 +4,18 @@
   height: rem(476);
 }
 
+.p-mv::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $img-filter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .p-mv__img,
 .p-mv__img img {
   width: inherit;
@@ -11,13 +23,15 @@
 }
 
 .p-mv__img img {
+  object-position: center top;
   @include mq(sp) {
-    object-position: 70% center;
+    object-position: 30% top;
   }
 }
 
 .p-mv__content {
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

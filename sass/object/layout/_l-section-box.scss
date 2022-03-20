@@ -5,7 +5,7 @@
 .l-section-box__inner {
   display: flex;
   align-items: flex-start;
-  @include mq(sp) { 
+  @include mq(sp) {
     flex-direction: column;
- }
+  }
 }

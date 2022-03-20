@@ -3,14 +3,14 @@
   font-weight: $font-weight-bold;
   line-height: 1.388;
   text-align: center;
-  @include mq(sp) { 
-     font-size: rem(24);
+  @include mq(sp) {
+    font-size: rem(24);
   }
 }
 
 .c-section-title.c-section-title--sub {
   font-size: rem(32);
-  @include mq(sp) { 
+  @include mq(sp) {
     font-size: rem(20);
- }
+  }
 }

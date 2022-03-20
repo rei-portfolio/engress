@@ -10,7 +10,6 @@
             <?php
             // 同じカテゴリから記事を3件呼び出す
             $categories = get_the_category($post->ID);
-
             $category_ID = array();
 
             foreach ($categories as $category) :

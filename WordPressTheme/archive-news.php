@@ -35,7 +35,7 @@
                             <h3 class="p-news-info__sub-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <!-- 文字数制限 -->
-                                     <?php show_limit_title(42); ?>
+                                    <?php show_limit_title(42); ?>
                                 </a>
                             </h3>
                         </li>

@@ -1,7 +1,4 @@
-// .p-contact-check__item {
-// 	display: none;
-// }
-
+// クラスではうまく反映されないためタグで実装
 input[type="checkbox"] + span {
   cursor: pointer;
   font-size: rem(16);
@@ -24,9 +21,6 @@ input[type="checkbox"] + span::before {
   left: 0;
   top: rem(2);
   position: absolute;
-  // top: 50%;
-  // -webkit-transform: translateY(-50%);
-  // transform: translateY(-50%);
   width: rem(20);
   @include mq(sp) {
     width: rem(14);
@@ -49,8 +43,8 @@ input[type="checkbox"] + span::after {
   transition: all 0.3s ease 0s;
   width: 1em;
   height: 0.6em;
-  @include mq(sp) { 
-     left: rem(1);
+  @include mq(sp) {
+    left: rem(1);
   }
 }
 

@@ -67,9 +67,13 @@
                 <?php endif; ?>
 
             </ul>
+
+            <!-- pagenavi -->
             <div class="l-pagenavi">
                 <?php wp_pagenavi(); ?>
             </div>
+            <!-- ../pagenavi -->
+
         </div>
 
     </section>
@@ -80,6 +84,7 @@
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->
+
 </main>
 <!-- ../main -->
 <?php get_footer(); ?>

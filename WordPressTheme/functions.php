@@ -41,9 +41,6 @@ function my_script_init() {
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
-
-
-
 /**
  * メニューの登録
  *

@@ -9,9 +9,9 @@
 }
 
 .p-ask__inner.l-inner {
-  @include mq(sp) { 
-     max-width: 100%;
-     padding: 0;
+  @include mq(sp) {
+    max-width: 100%;
+    padding: 0;
   }
 }
 
@@ -22,13 +22,13 @@
   justify-content: center;
   text-align: center;
   margin-top: rem(65);
-  @include mq(sp) { 
-     flex-direction: column;
-     padding-left: $padding-sp;
-     padding-right: $padding-sp;
-     list-style-type: disc;
-     list-style-position: inside;
-     margin-top: rem(40);
+  @include mq(sp) {
+    flex-direction: column;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: rem(40);
   }
 }
 
@@ -36,23 +36,21 @@
   font-size: rem(18);
   font-weight: $font-weight-bold;
   line-height: 2.166;
-  @include mq(sp) { 
+  @include mq(sp) {
     font-size: rem(16);
   }
 }
 
-
-
 .p-ask__item + .p-ask__item {
   margin-left: rem(30);
-  @include mq(sp) { 
-     margin-left: 0;
+  @include mq(sp) {
+    margin-left: 0;
   }
 }
 
 .p-ask__content {
-    margin-top: rem(83);
-    @include mq(sp) { 
-       margin-top: rem(40);
-    }
+  margin-top: rem(83);
+  @include mq(sp) {
+    margin-top: rem(40);
+  }
 }

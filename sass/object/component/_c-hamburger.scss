@@ -1,7 +1,3 @@
-$drawer-width: rem(25); //ドロワーの幅
-$drawer-height: rem(2); //ドロワー線の高さ
-$drawer-color: #1b224c; //ドロワー線の色
-
 .c-hamburger {
   display: none;
   @include mq(tab) {

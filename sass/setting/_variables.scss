@@ -12,9 +12,16 @@ $sub-border: #D5D5D5;
 $form_background: #707070;
 $quote: #B4B4B4;
 
+$img-filter: rgba(17, 17, 17, 0.2);
+
 
 // マウスホバー
 $opacity: 0.8; // 透過度
+
+// ハンバーガー
+$drawer-width: rem(25); //ドロワーの幅
+$drawer-height: rem(2); //ドロワー線の高さ
+$drawer-color: #1b224c; //ドロワー線の色
 
 // フォント
 $font-family-base: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",

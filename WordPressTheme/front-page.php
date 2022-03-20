@@ -9,11 +9,13 @@ $price = esc_url(home_url('/price/'));
 $contact = esc_url(home_url('/contact/'));
 ?>
 
+<!-- main -->
 <main>
+
     <!-- mv -->
     <section class="p-mv">
         <figure class="p-mv__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/mv.jpg" alt="toefl対策はエンぐレス">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/mv.jpg" alt="TOEFL対策はエングレス">
         </figure>
         <div class="p-mv__content">
             <h2 class="p-mv__title">TOEFL対策はEngress</h2>
@@ -366,7 +368,6 @@ $contact = esc_url(home_url('/contact/'));
 
         </div>
     </div>
-
     <!-- ../section-box -->
 
     <!-- contact -->
@@ -374,6 +375,7 @@ $contact = esc_url(home_url('/contact/'));
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->
-</main>
 
+</main>
+<!-- ../main -->
 <?php get_footer(); ?>

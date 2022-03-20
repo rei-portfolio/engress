@@ -1,18 +1,17 @@
 .p-accordion {
-    border-bottom: solid 1px $blue-background;
+  border-bottom: solid 1px $blue-background;
 }
 
 .p-accordion__title {
-    font-size: rem(16);
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-    padding-top: rem(25);
-    padding-bottom: rem(25);
-    padding-right: rem(60);
-    border-top: solid 1px $blue-background;
+  font-size: rem(16);
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-top: rem(25);
+  padding-bottom: rem(25);
+  padding-right: rem(60);
+  border-top: solid 1px $blue-background;
 }
-
 
 // 疑似要素
 .p-accordion__title::before,
@@ -25,9 +24,9 @@
   width: rem(25);
   height: rem(3);
   right: rem(20.5);
-  @include mq(sp) { 
-     width: rem(16);
-     height: rem(2);
+  @include mq(sp) {
+    width: rem(16);
+    height: rem(2);
   }
 }
 

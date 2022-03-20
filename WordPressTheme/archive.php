@@ -71,6 +71,7 @@
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->
+    
 </main>
 <!-- ../main -->
 <?php get_footer(); ?>

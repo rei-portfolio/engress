@@ -15,7 +15,7 @@
   display: block;
   text-decoration: underline;
   margin-top: rem(83);
-  @include mq(sp) { 
-     margin-top: rem(60);
+  @include mq(sp) {
+    margin-top: rem(60);
   }
 }

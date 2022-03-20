@@ -8,7 +8,7 @@
   margin-top: rem(112);
   @include mq(sp) {
     margin-top: rem(80);
-    // 横スクロールするため
+    // 横スクロールするため固定
     width: rem(850);
   }
 }

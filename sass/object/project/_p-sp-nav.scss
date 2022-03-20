@@ -7,7 +7,6 @@
     transform: translateX(100%);
     transition: 0.3s ease;
     overflow: hidden;
-
     height: 100vh;
     overflow: scroll;
   }
@@ -30,7 +29,6 @@
 
 .p-sp-nav__items {
   @include mq(tab) { 
-    // padding: rem(200) 0 rem(208);
     padding: rem(200) 0 rem(20);
     //   marginでheaderに刺さらないようにする
     margin-top: rem(50);

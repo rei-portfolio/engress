@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<!-- main -->
 <main>
 
     <!-- sub-mv -->
@@ -34,7 +34,7 @@
                 <?php while (have_posts()) : the_post(); ?>
                     <!-- 自動挿入されるpやbrタグを削除 -->
                     <?php remove_filter('the_content', 'wpautop'); ?>
-                    
+
                     <?php the_content(); ?>
                 <?php endwhile; ?>
             <?php endif; ?>
@@ -43,5 +43,6 @@
     </div>
     <!-- contact -->
 </main>
+<!-- ../main -->
 
 <?php get_footer(); ?>
