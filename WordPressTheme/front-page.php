@@ -242,10 +242,10 @@ $contact = esc_url(home_url('/contact/'));
                 よくある質問
             </h2>
             <div class="p-question__accordion p-accordion">
-                <h3 class="p-accordion__title js-accordion-title js-accordion-title--first">
+                <h3 class="p-accordion__title js-accordion-title">
                     Engressはサラリーマンでも学習を続けられるでしょうか？
                 </h3>
-                <div class="p-accordion__text js-accordion-text--first">
+                <div class="p-accordion__text js-accordion-text">
                     Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。
                 </div>
                 <h3 class="p-accordion__title js-accordion-title">
