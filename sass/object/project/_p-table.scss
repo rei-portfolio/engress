@@ -1,11 +1,15 @@
 .p-table {
   display: flex;
+  
   @include mq(sp) {
     font-size: rem(15);
   }
 }
 
 .p-table__item {
+  border-bottom: rem(1) solid $blue-background;
+  border-left: rem(1) solid $blue-background;
+  border-right: rem(1) solid $blue-background;
   text-align: center;
   max-width: calc(25% - #{rem(7)} * 3 / 4);
   width: 100%;
@@ -20,30 +24,23 @@
   font-size: rem(16);
   font-weight: $font-weight-bold;
   background-color: $blue-background;
-  padding-top: rem(21);
-  padding-bottom: rem(21);
+  padding: rem(18) rem(5);
+  width: calc(100% + 2px);
+  margin-left: rem(-1);
+  line-height: 2;
 }
 
 .p-table__body {
-  border: 0.5px solid $blue-background;
-  border-top: none;
-  height: 100%;
   padding-top: rem(30);
   padding-bottom: rem(94);
-  @include mq(sp) {
-    height: 87%;
-  }
 }
 
 .p-table__title.p-table__title--pickup {
   background-color: $ac-color;
-  margin-top: rem(-42);
+  // margin-top: rem(-42);
 }
 
-.p-table__br {
-  display: block;
-  padding-bottom: rem(15);
-}
+
 
 .p-table__price {
   font-size: rem(25);
@@ -86,3 +83,4 @@
 .p-table__text + .p-table__text {
   margin-top: rem(20);
 }
+

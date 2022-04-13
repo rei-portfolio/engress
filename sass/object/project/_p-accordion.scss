@@ -49,13 +49,13 @@
   overflow: hidden;
   opacity: 0;
   transition-duration: 0.3s;
-  height: auto;
   padding: 0 rem(25.5);
 }
 
 .p-accordion__text.is-open {
   padding: rem(23) rem(25.5);
   background-color: $pink-background;
+  height: auto;
   opacity: 1;
   line-height: 1.6875;
   margin-bottom: rem(15.5);

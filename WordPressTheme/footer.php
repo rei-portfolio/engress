@@ -25,7 +25,7 @@
                         <div class="c-tell__img">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/white-tell.png" alt="">
                         </div>
-                        <p class="c-tell__number">0123-456-7890</p>
+                        <a href="tel:0123-456-7890" class="c-tell__number">0123-456-7890</a>
                     </div>
                     <p class="p-footer__hour">平日08:00〜20:00</p>
                 </div>

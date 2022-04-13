@@ -14,7 +14,7 @@
 
 .p-sp-nav__contact {
   display: none;
-  @include mq(sp) { 
+  @include mq(tab) { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,12 +28,12 @@
 }
 
 .p-sp-nav__items {
+  // @include mq(tab) { 
+  //   padding: rem(200) 0 rem(20);
+  //   //   marginでheaderに刺さらないようにする
+  //   margin-top: rem(50);
+  // }
   @include mq(tab) { 
-    padding: rem(200) 0 rem(20);
-    //   marginでheaderに刺さらないようにする
-    margin-top: rem(50);
-  }
-  @include mq(sp) { 
     padding: rem(150) 0 rem(20);
      
   }
@@ -47,7 +47,7 @@
   text-align: center;
   color: $text-color;
   font-weight: $font-weight-bold;
-  @include mq(sp) {
+  @include mq(tab) {
     font-size: rem(16);
     padding-top: rem(16);
     padding-bottom: rem(16);

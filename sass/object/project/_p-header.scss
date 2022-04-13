@@ -10,10 +10,10 @@
   padding-left: rem(15);
   padding-right: rem(10);
   height: inherit;
+  // @include mq(tab) {
+  //   justify-content: flex-start;
+  // }
   @include mq(tab) {
-    justify-content: flex-start;
-  }
-  @include mq(sp) {
     padding: 0 rem(22);
   }
 }
@@ -29,10 +29,10 @@
   align-items: center;
   height: inherit;
   z-index: 100;
+  // @include mq(tab) {
+  //   margin-left: calc(130 / 768 * 100vw);
+  // }
   @include mq(tab) {
-    margin-left: calc(130 / 768 * 100vw);
-  }
-  @include mq(sp) {
     display: none;
   }
 }
@@ -42,7 +42,7 @@
   z-index: 1000;
   width: rem(136);
   height: rem(27);
-  @include mq(sp) {
+  @include mq(tab) {
     width: rem(100);
     height: rem(20);
   }

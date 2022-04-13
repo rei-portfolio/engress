@@ -1,0 +1,7 @@
+.p-section-box__inner {
+  display: flex;
+  align-items: flex-start;
+  @include mq(sp) {
+    flex-direction: column;
+  }
+}

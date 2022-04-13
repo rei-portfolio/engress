@@ -1,4 +1,5 @@
 .p-price-list__scroll {
+
   @include mq(sp) {
     overflow-x: auto;
   }

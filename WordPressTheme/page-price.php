@@ -35,12 +35,13 @@
     <!-- .../price-plan -->
 
     <!-- price-list -->
-    <section class="p-price-lost l-price-list">
+    <section class="p-price-list l-price-list">
 
         <div class="p-price-list__inner l-inner">
             <h2 class="p-price-list__title c-sub-section-title">料金表</h2>
 
             <div class="p-price-list__scroll js-scrollable">
+               
                 <ul class="p-price-list__items p-table">
                     <li class="p-table__item">
                         <h3 class="p-table__title">
@@ -78,11 +79,9 @@
                         </div>
 
                     </li>
-                    <li class="p-table__item">
+                    <li class="p-table__item  p-table__item--pickup">
                         <h3 class="p-table__title p-table__title--pickup">
-                            <span class="p-table__br">
-                                おすすめ
-                            </span>
+                            おすすめ<br />
                             志望校対策プラン
                         </h3>
                         <div class="p-table__body">

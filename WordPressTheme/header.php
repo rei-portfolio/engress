@@ -59,7 +59,7 @@
               <div class="c-tell__img">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/black-tell.png" alt="">
               </div>
-              <p class="c-tell__number">0123-456-7890</p>
+              <a href="tel:0123-456-7890" class="c-tell__number">0123-456-7890</あ>
             </div>
           </div>
 
