@@ -8,6 +8,6 @@
 </div>
 <div class="p-contact__info">
     <p class="p-contact__text">お電話でのお問い合わせはこちら</p>
-    <p class="p-contact__number">0123-456-7890</p>
+    <a href="tel:0123-456-7890" class="p-contact__number">0123-456-7890</a>
     <p class="p-contact__hour">平日 08:00~20:00</p>
 </div>

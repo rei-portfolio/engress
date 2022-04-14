@@ -1,15 +1,5 @@
-.p-price-list__scroll {
-
-  @include mq(sp) {
-    overflow-x: auto;
-  }
-}
+@use "global" as *;
 
 .p-price-list__items {
   margin-top: rem(112);
-  @include mq(sp) {
-    margin-top: rem(80);
-    // 横スクロールするため固定
-    width: rem(850);
-  }
 }

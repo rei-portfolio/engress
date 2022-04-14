@@ -272,7 +272,7 @@ $contact = esc_url(home_url('/contact/'));
     <!-- //question -->
 
     <!-- section-box -->
-    <div class="l-section-box p-section-box">
+    <div class="p-section-box l-section-box">
         <div class="p-section-box__inner l-inner">
 
             <!-- blog -->

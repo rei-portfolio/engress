@@ -11,6 +11,11 @@
   padding-bottom: rem(25);
   padding-right: rem(60);
   border-top: solid 1px $blue-background;
+  margin-top: 0;
+}
+
+.p-accordion__title.is-open {
+  margin-top: rem(15.5);
 }
 
 // 疑似要素
@@ -58,5 +63,6 @@
   height: auto;
   opacity: 1;
   line-height: 1.6875;
-  margin-bottom: rem(15.5);
 }
+
+

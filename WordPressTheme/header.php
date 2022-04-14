@@ -20,7 +20,7 @@
   <?php if (is_page(132) || is_404()) : ?>
     <!-- コンテンツ幅が少ない時フッター固定 -->
     <div class="l-position-contents">
-  <?php endif; ?>
+    <?php endif; ?>
 
     <!-- header -->
     <header class="l-header p-header">
@@ -59,7 +59,7 @@
               <div class="c-tell__img">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/black-tell.png" alt="">
               </div>
-              <a href="tel:0123-456-7890" class="c-tell__number">0123-456-7890</あ>
+              <a href="tel:0123-456-7890" class="c-tell__number">0123-456-7890</a>
             </div>
           </div>
 

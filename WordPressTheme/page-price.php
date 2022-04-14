@@ -40,82 +40,72 @@
         <div class="p-price-list__inner l-inner">
             <h2 class="p-price-list__title c-sub-section-title">料金表</h2>
 
-            <div class="p-price-list__scroll js-scrollable">
-               
-                <ul class="p-price-list__items p-table">
-                    <li class="p-table__item">
-                        <h3 class="p-table__title">
-                            基礎プラン
-                        </h3>
-                        <div class="p-table__body">
-                            <div class="p-table__block">
-                                <!-- acf -->
-                                <p class="p-table__price"><?php the_field('price'); ?></p>
-                                <p class="p-table__month">*月額（税抜価格）</p>
+            <div class="p-price-list__items p-table">
+                <div class="p-table__scroll js-scrollable">
+                    <ul class="p-table__terms">
+                        <li class="p-table__term">基礎プラン</li>
+                        <li class="p-table__term">演習プラン</li>
+                        <li class="p-table__term p-table__term--pickup">おすすめ<br />
+                            志望校対策プラン</li>
+                        <li class="p-table__term">フレックスプラン</li>
+                    </ul>
+                    <ul class="p-table__items">
+                        <li class="p-table__item">
+                            <div class="p-table__body">
+                                <div class="p-table__block">
+                                    <!-- acf -->
+                                    <p class="p-table__price"><?php the_field('price'); ?></p>
+                                    <p class="p-table__month">*月額（税抜価格）</p>
+                                </div>
+                                <div class="p-table__content">
+                                    <p class="p-table__text">カリキュラム作成</p>
+                                    <p class="p-table__text">TOEFL学習サポート</p>
+                                    <p class="p-table__text">週一回のビデオMTG</p>
+                                </div>
                             </div>
-                            <div class="p-table__content">
-                                <p class="p-table__text">カリキュラム作成</p>
-                                <p class="p-table__text">TOEFL学習サポート</p>
-                                <p class="p-table__text">週一回のビデオMTG</p>
+                        </li>
+                        <li class="p-table__item">
+                            <div class="p-table__body">
+                                <div class="p-table__block">
+                                    <p class="p-table__price"><?php the_field('price_2'); ?></p>
+                                    <p class="p-table__month">*月額（税抜価格）</p>
+                                </div>
+                                <div class="p-table__content">
+                                    <p class="p-table__text">カリキュラム作成</p>
+                                    <p class="p-table__text">TOEFL学習サポート</p>
+                                    <p class="p-table__text">週一回のビデオMTG</p>
+                                    <p class="p-table__text">月二回の模試（解説付き）</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="p-table__item">
-                        <h3 class="p-table__title">
-                            演習プラン
-                        </h3>
-                        <div class="p-table__body">
-
-                            <div class="p-table__block">
-                                <p class="p-table__price"><?php the_field('price_2'); ?></p>
-                                <p class="p-table__month">*月額（税抜価格）</p>
+                        </li>
+                        <li class="p-table__item  p-table__item--pickup">
+                            <div class="p-table__body">
+                                <div class="p-table__block">
+                                    <p class="p-table__price p-table__price--pickup"><?php the_field('price_3'); ?></p>
+                                    <p class="p-table__month">*月額（税抜価格）</p>
+                                </div>
+                                <div class="p-table__content">
+                                    <p class="p-table__text">カリキュラム作成</p>
+                                    <p class="p-table__text">TOEFL学習サポート</p>
+                                    <p class="p-table__text">週一回のビデオMTG</p>
+                                    <p class="p-table__text">月二回の模試（解説付き）</p>
+                                    <p class="p-table__text">週一の英語面接対策</p>
+                                </div>
                             </div>
-                            <div class="p-table__content">
-                                <p class="p-table__text">カリキュラム作成</p>
-                                <p class="p-table__text">TOEFL学習サポート</p>
-                                <p class="p-table__text">週一回のビデオMTG</p>
-                                <p class="p-table__text">月二回の模試（解説付き）</p>
+                        </li>
+                        <li class="p-table__item">
+                            <div class="p-table__body">
+                                <div class="p-table__block">
+                                    <p class="p-table__price"><?php the_field('price_4'); ?></p>
+                                    <p class="p-table__month">*月額（税抜価格）</p>
+                                </div>
+                                <div class="p-table__content">
+                                    <p class="p-table__text p-table__text--none">別途ご相談ください</p>
+                                </div>
                             </div>
-                        </div>
-
-                    </li>
-                    <li class="p-table__item  p-table__item--pickup">
-                        <h3 class="p-table__title p-table__title--pickup">
-                            おすすめ<br />
-                            志望校対策プラン
-                        </h3>
-                        <div class="p-table__body">
-
-                            <div class="p-table__block">
-                                <p class="p-table__price p-table__price--pickup"><?php the_field('price_3'); ?></p>
-                                <p class="p-table__month">*月額（税抜価格）</p>
-                            </div>
-                            <div class="p-table__content">
-                                <p class="p-table__text">カリキュラム作成</p>
-                                <p class="p-table__text">TOEFL学習サポート</p>
-                                <p class="p-table__text">週一回のビデオMTG</p>
-                                <p class="p-table__text">月二回の模試（解説付き）</p>
-                                <p class="p-table__text">週一の英語面接対策</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li class="p-table__item">
-                        <h3 class="p-table__title">
-                            フレックスプラン
-                        </h3>
-                        <div class="p-table__body">
-
-                            <div class="p-table__block">
-                                <p class="p-table__price"><?php the_field('price_4'); ?></p>
-                                <p class="p-table__month">*月額（税抜価格）</p>
-                            </div>
-                            <div class="p-table__content">
-                                <p class="p-table__text p-table__text--none">＊別途ご相談ください</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

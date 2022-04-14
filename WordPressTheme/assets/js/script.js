@@ -29,8 +29,10 @@ jQuery(function ($) {
     // 最初開ける↓
     $(".js-accordion-text:first-of-type").addClass("is-open");
     $(".js-accordion-title:first-of-type").addClass("is-active");
+    $(".js-accordion-title:nth-of-type(2)").addClass("is-open");
     $(".js-accordion-title").on("click", function () {
       $(this).next().toggleClass("is-open");
+      $(this).next().next().toggleClass("is-open");
       $(this).toggleClass("is-active");
     });
 
@@ -68,13 +70,13 @@ jQuery(function ($) {
     });
 
     /* 電話リンク */
-    let ua = navigator.userAgent;
-    if (ua.indexOf("iPhone") < 0 && ua.indexOf("Android") < 0) {
-      jQuery('a[href^="tel:"]')
-        .css("cursor", "default")
-        .on("click", function (e) {
-          e.preventDefault();
-        });
-    }
+    // let ua = navigator.userAgent;
+    // if (ua.indexOf("iPhone") < 0 && ua.indexOf("Android") < 0) {
+    //   jQuery('a[href^="tel:"]')
+    //     .css("cursor", "default")
+    //     .on("click", function (e) {
+    //       e.preventDefault();
+    //     });
+    // }
   });
 });
