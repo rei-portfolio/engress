@@ -2582,25 +2582,6 @@ input[type="radio"]:checked + span::after {
 	padding: 0;
 }
 
-@media (prefers-reduced-motion: reduce) {
-
-html:focus-within {
-	scroll-behavior: auto;
-}
-
-*,
-*::before,
-*::after {
-	-webkit-animation-duration: 0.01ms !important;
-	-webkit-animation-iteration-count: 1 !important;
-	animation-duration: 0.01ms !important;
-	animation-iteration-count: 1 !important;
-	scroll-behavior: auto !important;
-	transition-duration: 0.01ms !important;
-}
-
-}
-
 @media (min-width: 900px) {
 
 html {
@@ -2726,10 +2707,6 @@ textarea:-ms-input-placeholder {
 
 html {
 	font-size: 16px;
-}
-
-a:hover {
-	opacity: initial;
 }
 
 .l-contact {

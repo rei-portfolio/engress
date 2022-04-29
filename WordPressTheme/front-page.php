@@ -45,8 +45,7 @@ $contact = esc_url(home_url('/contact/'));
                 <div class="p-border-box__inner">
                     <h2 class="p-border-box__title c-section-title">
                         Engressは<br />
-                        <span class="p-border-box__under">TOEFLに特化したスクール</span>
-                        です
+                        <span class="p-border-box__under">TOEFLに特化したスクール</span>です
                     </h2>
                     <p class="p-border-box__text">
                         完全オーダーメイドで、<br class="u-hidden-tab" />１人１人の悩みに合わせた最適な指導で<br class="u-hidden-sp" />TOEFLの苦手分野を克服します。
