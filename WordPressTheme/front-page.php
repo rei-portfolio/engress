@@ -30,7 +30,7 @@ $contact = esc_url(home_url('/contact/'));
     <!-- ../mv -->
 
     <!-- ask -->
-    <section class="p-ask">
+    <section class="p-ask js-scroll-trigger is-show">
         <div class="p-ask__inner l-inner">
             <p class="p-ask__title c-section-title">
                 TOEFL学習で<br class="u-hidden-tab" />こんな悩みありませんか？

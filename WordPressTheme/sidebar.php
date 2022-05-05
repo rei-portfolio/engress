@@ -1,7 +1,7 @@
 <aside class="l-side-contents">
 
     <!-- relate -->
-    <div class="p-relate l-relate">
+    <div class="p-relate l-relate js-scroll-trigger is-show">
         <div class="p-relate__title">
             <div class="c-side-title">関連記事</div>
         </div>
@@ -57,7 +57,7 @@
     <!-- ../relate -->
 
     <!-- category -->
-    <div class="p-category l-category">
+    <div class="p-category l-category js-scroll-trigger is-show">
         <div class="p-category__title">
             <div class="c-side-title">カテゴリー</div>
         </div>

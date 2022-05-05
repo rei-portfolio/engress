@@ -2775,6 +2775,11 @@ html {
 	font-size: 1.25rem;
 }
 
+.c-side-title {
+	font-size: 1.25rem;
+	padding: 0.625rem;
+}
+
 .c-sub-section-title {
 	font-size: 1.5rem;
 }
