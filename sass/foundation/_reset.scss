@@ -12,7 +12,6 @@ html {
   //375px~787px
   font-size: vw(375, 16);
 
-  // add
   // ～375px
   @include mq("sm") {
     font-size: (16 / 375) * 100vw;

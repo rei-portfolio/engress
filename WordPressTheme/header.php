@@ -8,9 +8,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- index -->
   <meta name="robots" content="noindex" />
-  <meta name="description" content="日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール" />
-  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
   <?php wp_head(); ?>
 </head>
 

@@ -34,9 +34,16 @@ add_action('after_setup_theme', 'my_setup');
  * @codex https://wpdocs.osdn.jp/%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC
  */
 function my_script_init() {
-
+	// WordPress提供のjquery.jsを読み込まない
+	wp_deregister_script('jquery');
+	// jQueryの読み込み
+	wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.min.js', "", "1.0.1");
+	// スクロールヒント
+	wp_enqueue_script('scroll-hint', '//unpkg.com/scroll-hint@latest/js/scroll-hint.min.js', "", "1.0.1", false);
+	wp_enqueue_style('scroll-hint', '//unpkg.com/scroll-hint@latest/css/scroll-hint.css', "", "1.0.1", false);
+	// 自作cssファイルの読み込み
 	wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.1', 'all');
-
+	// 自作jsファイルの読み込み
 	wp_enqueue_script('my', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
@@ -150,16 +157,16 @@ add_filter('excerpt_more', 'my_excerpt_more');
 function show_limit_title($limit = 50) {
 	global $post;
 	$title = $post->post_title;
-	
-	if( mb_strlen( $title ) > $limit) {
-	  $title= mb_substr( $title , 0 , $limit ) ;
-	  $show_title = $title. '……' ;
+
+	if (mb_strlen($title) > $limit) {
+		$title = mb_substr($title, 0, $limit);
+		$show_title = $title . '……';
 	} else {
-	  $show_title = $title;
+		$show_title = $title;
 	}
-   
+
 	echo $show_title;
-  }
+}
 
 
 // WP Social Bookmarking Light
