@@ -152,9 +152,9 @@ a {
 }
 a:hover {
   opacity: $opacity;
-  // @include mq(sp) {
-  //   opacity: initial;
-  // }
+  @include mq(sp) {
+    opacity: 1;
+  }
 }
 
 img {

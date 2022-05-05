@@ -14,13 +14,13 @@
 <main>
 
     <!-- container -->
-    <div class="l-container js-scroll-trigger is-show">
-        <div class="l-container__inner l-inner">
+    <div class="p-container l-container">
+        <div class="p-container__inner l-inner">
             <!-- main-contents -->
             <div class="l-main-contents">
 
                 <!-- single -->
-                <article class="p-single">
+                <article class="p-single js-scroll-trigger is-show">
 
                     <?php if (have_posts()) : ?>
                         <?php while (have_posts()) : the_post(); ?>
@@ -59,7 +59,7 @@
                 <!-- single -->
 
                 <!-- pickup -->
-                <section class="p-pickup l-pickup">
+                <section class="p-pickup l-pickup js-scroll-trigger is-show">
                     <h2 class="p-pickup__title">おすすめの記事</h2>
                     <ul class="p-pickup__items">
 

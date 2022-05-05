@@ -588,10 +588,6 @@ summary {
 	margin-top: 3.75rem;
 }
 
-.l-container__inner {
-	display: flex;
-}
-
 .l-feature {
 	margin-top: 3.6875rem;
 }
@@ -1510,6 +1506,10 @@ input[type="radio"]:checked + span::after {
 
 .p-contact__hour {
 	margin-left: 1.25rem;
+}
+
+.p-container__inner {
+	display: flex;
 }
 
 .p-feature__item {
@@ -2721,12 +2721,12 @@ html {
 	font-size: 16px;
 }
 
-.l-contact {
-	margin-top: 4.375rem;
+a:hover {
+	opacity: 1;
 }
 
-.l-container__inner {
-	flex-direction: column;
+.l-contact {
+	margin-top: 4.375rem;
 }
 
 .l-inner {
@@ -2972,6 +2972,10 @@ input[type="radio"] + span {
 .p-contact__hour {
 	margin-left: 0;
 	margin-top: 0.625rem;
+}
+
+.p-container__inner {
+	flex-direction: column;
 }
 
 .p-footer__inner {

@@ -1,0 +1,6 @@
+.p-container__inner {
+  display: flex;
+  @include mq(sp) {
+    flex-direction: column;
+  }
+}
