@@ -11,55 +11,49 @@ $contact = esc_url(home_url('/contact/'));
 
 <!-- main -->
 <main>
-    <!-- js-scroll-trigger -->
-    <div class="js-scroll-trigger is-show">
-
-        <!-- mv -->
-        <section class="p-mv">
-            <figure class="p-mv__img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/mv.jpg" alt="TOEFL対策はエングレス">
-            </figure>
-            <div class="p-mv__content">
-                <h2 class="p-mv__title">TOEFL対策はEngress</h2>
-                <p class="p-mv__text">
-                    日本人へのTOEFL指導歴豊かな講師陣の<br />コーチング型TOEFLスクール
-                </p>
-                <div class="p-mv__btn">
-                    <a href="<?php echo $contact ?>" class="c-main-btn">資料請求</a>
-                </div>
-                <a href="<?php echo $contact ?>" class="p-mv__link">お問い合わせ</a>
+    <!-- mv -->
+    <section class="p-mv">
+        <figure class="p-mv__img">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/top/mv.jpg" alt="TOEFL対策はエングレス">
+        </figure>
+        <div class="p-mv__content">
+            <h2 class="p-mv__title">TOEFL対策はEngress</h2>
+            <p class="p-mv__text">
+                日本人へのTOEFL指導歴豊かな講師陣の<br />コーチング型TOEFLスクール
+            </p>
+            <div class="p-mv__btn">
+                <a href="<?php echo $contact ?>" class="c-main-btn">資料請求</a>
             </div>
-        </section>
-        <!-- ../mv -->
+            <a href="<?php echo $contact ?>" class="p-mv__link">お問い合わせ</a>
+        </div>
+    </section>
+    <!-- ../mv -->
 
-        <!-- ask -->
-        <section class="p-ask">
-            <div class="p-ask__inner l-inner">
-                <p class="p-ask__title c-section-title">
-                    TOEFL学習で<br class="u-hidden-tab" />こんな悩みありませんか？
-                </p>
-                <ul class="p-ask__items">
-                    <li class="p-ask__item">勉強の習慣が<br class="u-hidden-sp" />身についていない</li>
-                    <li class="p-ask__item">勉強しているはず<br class="u-hidden-sp" />なのに点数が伸びない</li>
-                    <li class="p-ask__item">正しい勉強方法が<br class="u-hidden-sp" />わからない</li>
-                </ul>
-                <div class="p-ask__content p-border-box">
-                    <div class="p-border-box__inner">
-                        <h2 class="p-border-box__title c-section-title">
-                            Engressは<br />
-                            <span class="p-border-box__under">TOEFLに特化したスクール</span>です
-                        </h2>
-                        <p class="p-border-box__text">
-                            完全オーダーメイドで、<br class="u-hidden-tab" />１人１人の悩みに合わせた最適な指導で<br class="u-hidden-sp" />TOEFLの苦手分野を克服します。
-                        </p>
-                    </div>
+    <!-- ask -->
+    <section class="p-ask">
+        <div class="p-ask__inner l-inner">
+            <p class="p-ask__title c-section-title">
+                TOEFL学習で<br class="u-hidden-tab" />こんな悩みありませんか？
+            </p>
+            <ul class="p-ask__items">
+                <li class="p-ask__item">勉強の習慣が<br class="u-hidden-sp" />身についていない</li>
+                <li class="p-ask__item">勉強しているはず<br class="u-hidden-sp" />なのに点数が伸びない</li>
+                <li class="p-ask__item">正しい勉強方法が<br class="u-hidden-sp" />わからない</li>
+            </ul>
+            <div class="p-ask__content p-border-box">
+                <div class="p-border-box__inner">
+                    <h2 class="p-border-box__title c-section-title">
+                        Engressは<br />
+                        <span class="p-border-box__under">TOEFLに特化したスクール</span>です
+                    </h2>
+                    <p class="p-border-box__text">
+                        完全オーダーメイドで、<br class="u-hidden-tab" />１人１人の悩みに合わせた最適な指導で<br class="u-hidden-sp" />TOEFLの苦手分野を克服します。
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- ../ask -->
-    </div>
-    <!-- ../js-scroll-trigger -->
-
+        </div>
+    </section>
+    <!-- ../ask -->
 
     <!-- feature -->
     <section class="p-feature l-feature js-scroll-trigger is-show">
