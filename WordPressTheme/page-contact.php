@@ -22,7 +22,7 @@
     <!-- ../パンくず -->
 
     <!-- contact -->
-    <div class="l-sub-contact p-sub-contact">
+    <div class="l-sub-contact p-sub-contact js-scroll-trigger is-show">
         <div class="p-sub-contact__inner l-inner">
             <div class="p-sub-contact__textBox">
                 <p class="p-sub-contact__text">

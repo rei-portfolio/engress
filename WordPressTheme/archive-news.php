@@ -22,7 +22,7 @@
     <!-- ../パンくず -->
 
     <!-- news -->
-    <section class="p-sub-news l-sub-news">
+    <section class="p-sub-news l-sub-news js-scroll-trigger is-show">
         <div class="p-sub-news__inner l-inner">
             <h2 class="p-sub-news__title c-sub-section-title"><?php the_archive_title() ?></h2>
             <ul class="p-sub-news__items">
@@ -53,7 +53,7 @@
     <!-- ../news -->
 
     <!-- contact -->
-    <section class="p-contact l-archive-contact">
+    <section class="p-contact l-archive-contact js-scroll-trigger is-show">
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->

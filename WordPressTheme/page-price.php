@@ -22,7 +22,7 @@
     <!-- ../パンくず -->
 
     <!-- price-plan -->
-    <section class="p-price-plan l-price-plan">
+    <section class="p-price-plan l-price-plan js-scroll-trigger is-show">
         <div class="p-price-plan__inner l-inner">
             <h2 class="p-price-plan__title c-sub-section-title">料金体系</h2>
             <div class="p-price-plan__box">
@@ -35,7 +35,7 @@
     <!-- .../price-plan -->
 
     <!-- price-list -->
-    <section class="p-price-list l-price-list">
+    <section class="p-price-list l-price-list js-scroll-trigger is-show">
 
         <div class="p-price-list__inner l-inner">
             <h2 class="p-price-list__title c-sub-section-title">料金表</h2>
@@ -112,7 +112,7 @@
     <!-- ../price-list -->
 
     <!-- contact -->
-    <section class="p-contact l-price-contact">
+    <section class="p-contact l-price-contact js-scroll-trigger is-show">
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->

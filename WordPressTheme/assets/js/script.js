@@ -78,5 +78,27 @@ jQuery(function ($) {
     //       e.preventDefault();
     //     });
     // }
+
+    //スクロールアニメーション
+    window.onload = function () {
+      init();
+      $(window).scroll(lazyFade);
+    };
+    function init() {
+      lazyFade();
+    }
+    function lazyFade() {
+      var scrollTop = $(window).scrollTop();
+      var scrollBtm = scrollTop + $(window).height();
+      $(".js-scroll-trigger").each(function () {
+        var target = $(this);
+        var targetTop = target.offset().top;
+
+        if (scrollBtm > targetTop) {
+          target.removeClass("is-show");
+          target.addClass("is-show--done");
+        }
+      });
+    }
   });
 });

@@ -22,7 +22,7 @@
     <!-- ../パンくず -->
 
     <!-- blog -->
-    <section class="p-sub-blog l-sub-blog">
+    <section class="p-sub-blog l-sub-blog js-scroll-trigger is-show">
         <div class="p-sub-blog__inner l-inner">
 
             <h2 class="p-sub-blog__title c-sub-section-title">新着一覧</h2>
@@ -80,7 +80,7 @@
     <!-- ../blog -->
 
     <!-- contact -->
-    <section class="p-contact l-archive-contact">
+    <section class="p-contact l-archive-contact js-scroll-trigger is-show">
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->

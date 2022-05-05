@@ -1,0 +1,11 @@
+.js-scroll-trigger.is-show {
+  position: relative;
+  opacity: 0;
+  transform: translate(0%, rem(70));
+}
+
+.js-scroll-trigger.is-show--done {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1s;
+}

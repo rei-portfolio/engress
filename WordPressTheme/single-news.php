@@ -14,7 +14,7 @@
 <main>
 
     <!-- single -->
-    <article class="p-news-single l-news-single">
+    <article class="p-news-single l-news-single js-scroll-trigger is-show">
         <div class="p-news-single__inner l-inner">
 
             <?php if (have_posts()) : ?>
@@ -45,7 +45,7 @@
     <!-- single -->
 
     <!-- contact -->
-    <section class="p-contact l-single-contact">
+    <section class="p-contact l-single-contact js-scroll-trigger is-show">
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->

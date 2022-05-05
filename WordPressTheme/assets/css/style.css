@@ -2536,6 +2536,18 @@ input[type="radio"]:checked + span::after {
 	margin-top: 3.3125rem;
 }
 
+.js-scroll-trigger.is-show {
+	opacity: 0;
+	position: relative;
+	transform: translate(0%, 4.375rem);
+}
+
+.js-scroll-trigger.is-show--done {
+	opacity: 1;
+	transform: translate(0, 0);
+	transition: all 1s;
+}
+
 .mw_wp_form .horizontal-item + .horizontal-item {
 	margin-left: 0;
 }

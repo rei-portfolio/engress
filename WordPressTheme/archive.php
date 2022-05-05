@@ -22,7 +22,7 @@
     <!-- ../パンくず -->
 
     <!-- blog -->
-    <section class="p-sub-blog l-sub-blog">
+    <section class="p-sub-blog l-sub-blog js-scroll-trigger is-show">
         <div class="p-sub-blog__inner l-inner">
             <!-- ページタイトル -->
             <h2 class="p-sub-blog__title c-sub-section-title"><?php the_archive_title(''); ?></h2>
@@ -67,11 +67,11 @@
     <!-- ../blog -->
 
     <!-- contact -->
-    <section class="p-contact l-archive-contact">
+    <section class="p-contact l-archive-contact js-scroll-trigger is-show">
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->
-    
+
 </main>
 <!-- ../main -->
 <?php get_footer(); ?>

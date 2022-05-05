@@ -14,7 +14,7 @@
 <main>
 
     <!-- container -->
-    <div class="l-container">
+    <div class="l-container js-scroll-trigger is-show">
         <div class="l-container__inner l-inner">
             <!-- main-contents -->
             <div class="l-main-contents">
@@ -124,7 +124,7 @@
     <!-- ../container -->
 
     <!-- contact -->
-    <section class="p-contact l-single-contact">
+    <section class="p-contact l-single-contact js-scroll-trigger is-show">
         <?php get_template_part('includes/contact'); ?>
     </section>
     <!-- ../contact -->
