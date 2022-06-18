@@ -7,14 +7,12 @@
     transform: translateX(100%);
     transition: 0.3s ease;
     overflow: hidden;
-    height: 100vh;
-    overflow: scroll;
   }
 }
 
 .p-sp-nav__contact {
   display: none;
-  @include mq(tab) { 
+  @include mq(tab) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,17 +25,16 @@
   margin-top: rem(20);
 }
 
-.p-sp-nav__items {
-  // @include mq(tab) { 
-  //   padding: rem(200) 0 rem(20);
-  //   //   marginでheaderに刺さらないようにする
-  //   margin-top: rem(50);
-  // }
-  @include mq(tab) { 
-    padding: rem(150) 0 rem(20);
-     
+// .p-sp-nav__contactがあるためクラス追加
+.p-sp-nav__body {
+  @include mq(tab) {
+    height: 100vh;
+    overflow: scroll;
+    padding: rem(70) 0 rem(20);
+    margin-top: rem(80);
   }
 }
+
 .p-sp-nav__item a {
   display: block;
   font-size: rem(18);

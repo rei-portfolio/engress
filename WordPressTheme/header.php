@@ -75,24 +75,24 @@
 
         <!-- sp-nav -->
         <div class="p-header__sp-nav p-sp-nav" id="js-sp-nav" aria-hidden="true">
-          <nav>
-            <ul class="p-sp-nav__items">
-              <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
-              <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/news/')) ?>">お知らせ</a></li>
-              <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/blog/')) ?>">ブログ</a></li>
-              <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
-            </ul>
-          </nav>
-
-          <div class="p-sp-nav__contact">
-            <div class="p-sp-nav__btn">
-              <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn">資料請求</a>
-            </div>
-            <div class="p-sp-nav__btn">
-              <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn c-small-btn--blue">お問い合わせ</a>
+          <div class="p-sp-nav__body">
+            <nav>
+              <ul class="p-sp-nav__items">
+                <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/news/')) ?>">お知らせ</a></li>
+                <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/blog/')) ?>">ブログ</a></li>
+                <li class="p-sp-nav__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">コース・料金</a></li>
+              </ul>
+            </nav>
+            <div class="p-sp-nav__contact">
+              <div class="p-sp-nav__btn">
+                <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn">資料請求</a>
+              </div>
+              <div class="p-sp-nav__btn">
+                <a href="<?php echo esc_url(home_url('/contact/')) ?>" class="c-small-btn c-small-btn--blue">お問い合わせ</a>
+              </div>
             </div>
           </div>
-
         </div>
         <!-- //.sp-nav -->
 

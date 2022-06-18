@@ -234,25 +234,34 @@ input[type="checkbox"]:disabled + span::before {
 
 /* placeholder */
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-	color: #b4b4b4;
-	font-size: 12px;
-	padding-top: 5px;
-}
-
 input::-moz-placeholder,
 textarea::-moz-placeholder {
 	color: #b4b4b4;
-	font-size: 12px;
-	padding-top: 5px;
+	font-size: 0.75rem;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
 	color: #b4b4b4;
-	font-size: 12px;
-	padding-top: 5px;
+	font-size: 0.75rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #b4b4b4;
+	font-size: 0.75rem;
+}
+
+textarea::-moz-placeholder {
+	padding-top: 0.1875rem;
+}
+
+textarea:-ms-input-placeholder {
+	padding-top: 0.1875rem;
+}
+
+textarea::placeholder {
+	padding-top: 0.1875rem;
 }
 
 *,
@@ -2029,7 +2038,6 @@ input[type="radio"]:checked + span::after {
 	transition: all 0.3s ease-in-out;
 }
 
-@use "global" as *;
 .p-price-list__items {
 	margin-top: 7rem;
 }
@@ -2552,6 +2560,10 @@ input[type="radio"]:checked + span::after {
 	margin-left: 0;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .u-hidden-tab {
 	display: none;
 }
@@ -2645,9 +2657,7 @@ html {
 .p-sp-nav {
 	background-color: #fff;
 	display: block;
-	height: 100vh;
 	overflow: hidden;
-	overflow: scroll;
 	transform: translateX(100%);
 	transition: 0.3s ease;
 }
@@ -2660,8 +2670,11 @@ html {
 	padding-bottom: 13rem;
 }
 
-.p-sp-nav__items {
-	padding: 9.375rem 0 1.25rem;
+.p-sp-nav__body {
+	height: 100vh;
+	margin-top: 5rem;
+	overflow: scroll;
+	padding: 4.375rem 0 1.25rem;
 }
 
 .p-sp-nav__item a {
@@ -2702,19 +2715,16 @@ select {
 	font-size: 14px;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-	padding-top: 2px;
-}
-
-input::-moz-placeholder,
 textarea::-moz-placeholder {
-	padding-top: 2px;
+	padding-top: 0.125rem;
 }
 
-input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-	padding-top: 2px;
+	padding-top: 0.125rem;
+}
+
+textarea::placeholder {
+	padding-top: 0.125rem;
 }
 
 html {

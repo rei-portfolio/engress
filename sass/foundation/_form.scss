@@ -1,8 +1,6 @@
 @import "./../setting/variables";
 
 // https://wpqw.jp/snippet/form-reset/
-@charset "utf-8";
-
 fieldset,
 legend {
   margin: 0;
@@ -283,31 +281,17 @@ input:invalid {
 }
 input:required {
 }
+
 /* placeholder */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #b4b4b4;
-  font-size: 12px;
-  padding-top: 5px;
-  @include mq(sp) {
-    padding-top: 2px;
-  }
+  font-size: rem(12);
 }
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #b4b4b4;
-  font-size: 12px;
-  padding-top: 5px;
+
+textarea::placeholder {
+  padding-top: rem(3);
   @include mq(sp) {
-    padding-top: 2px;
-  }
-}
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #b4b4b4;
-  font-size: 12px;
-  padding-top: 5px;
-  @include mq(sp) {
-    padding-top: 2px;
+    padding-top: rem(2);
   }
 }

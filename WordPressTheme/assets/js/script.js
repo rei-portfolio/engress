@@ -15,6 +15,7 @@ jQuery(function ($) {
 
     // ハンバーガーメニュー
     $("#js-hamburger").click(function () {
+      $("body").toggleClass("no-scroll");
       $("body").toggleClass("is-drawerActive");
       if ($(this).attr("aria-expanded") == "false") {
         $(this).attr("aria-expanded", "true");
