@@ -32,13 +32,13 @@ input[type="radio"] + span::before {
 
 input[type="radio"] + span::after {
   background: $form_background;
-  border: 1px solid transparent;
+  // border: 1px solid transparent;
   border-radius: 50%;
   content: "";
   height: rem(8);
   left: rem(6);
   opacity: 0;
-  padding: rem(2);
+  // padding: rem(2);
   position: absolute;
   top: 51%;
   transform: translateY(-50%);
